@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
             </a>
           </div>
           <div className="flex  justify-center bg-orange-950 text-neutral-100 text-center w-full py-4 fixed bottom-0">
-            na webových stánkách usilovně pracuji{" "}
+            připravuji nový web{" "}
             <svg
               className="ml-4 w-5 fill-slate-100"
               xmlns="http://www.w3.org/2000/svg"
