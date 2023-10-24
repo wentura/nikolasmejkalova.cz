@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
         <div className="flex flex-col align-middle justify-center min-h-screen text-center">
           <div className="mx-auto p-4">
             <img
-              className="rounded-full w-44 sm:w-64 md:w-96"
+              className="rounded-full w-44 md:w-64"
               src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1698139393/nikolasmejkalova_cz/nikola1_ofn8ae.webp"
               alt="Nikola Smejkalová"
             />
