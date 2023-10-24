@@ -20,7 +20,7 @@ export default function Hero() {
           </p>
           <button className="btn btn-primary">Get Started</button>
         </div>
-        <div className="max-w-md bg-red-700">tewte</div>
+        <div className="max-w-md bg-nikola-700">tewte</div>
       </div>
     </div>
   );

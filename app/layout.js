@@ -7,13 +7,20 @@ export default function RootLayout({ children }) {
       <head>
         <title>Nikola Smejkalová</title>
       </head>
-      <body className="bg-orange-50">
+      <body className="bg-nikola-50-50">
         <div className="flex flex-col align-middle justify-center min-h-screen text-center">
+          <div className="mx-auto p-4">
+            <img
+              className="rounded-full w-44 sm:w-64 md:w-96"
+              src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1698139393/nikolasmejkalova_cz/nikola1_ofn8ae.webp"
+              alt="Nikola Smejkalová"
+            />
+          </div>
           <div className="">
-            <h2 className="mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-gray-900 sm:text-6xl mx-auto">
+            <h2 className="mb-6 font-sans text-4xl font-bold leading-none tracking-tight text-nikola-700 sm:text-6xl mx-auto">
               Nikola Smejkalová
             </h2>
-            <p className="text-base text-gray-800 md:text-lg">
+            <p className="text-base text-nikola-700 md:text-lg">
               jsem facilitátorka <br className="md:hidden" /> PSYCH-K® a
               Emočních kódů.
             </p>
@@ -21,7 +28,7 @@ export default function RootLayout({ children }) {
           <div className="flex justify-center gap-8 flex-wrap mt-4 sm:mt-8 md:mt-12">
             <a
               href="tel:+420737081416"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black rounded shadow-md bg-orange-200 hover:bg-orange-400 focus:shadow-outline focus:outline-none"
+              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black rounded shadow-md bg-nikola-100 hover:bg-nikola-50 focus:shadow-outline focus:outline-none"
             >
               <svg
                 className="w-8 pr-2"
@@ -34,8 +41,8 @@ export default function RootLayout({ children }) {
               737 081 416
             </a>
             <a
-              href="mailto:nsnikola@seznam.cz"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-lime-200 hover:bg-lime-400 focus:shadow-outline focus:outline-none"
+              href="mailto:info@nikolasmejkalova.cz"
+              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-nikola-50 transition duration-200 rounded shadow-md bg-nikola-500 hover:bg-nikola-50 hover:text-nikola-700 focus:shadow-outline focus:outline-none fill-nikola-50 hover:fill-nikola-700"
             >
               <svg
                 className="w-8 pr-2"
@@ -47,10 +54,10 @@ export default function RootLayout({ children }) {
                 <path d="M16 18a1 1 0 01-.618-.214l-14-11a1 1 0 111.236-1.572L16 15.728 29.382 5.214a1 1 0 111.236 1.572l-14 11A1 1 0 0116 18z"></path>
                 <path d="M2 27a1 1 0 01-.707-1.707l11-11a1 1 0 011.414 1.414l-11 11A1 1 0 012 27zm28 0a1 1 0 01-.707-.293l-11-11a1 1 0 011.414-1.414l11 11A1 1 0 0130 27z"></path>
               </svg>
-              nsnikola@seznam.cz
+              info@nikolasmejkalova.cz
             </a>
           </div>
-          <div className="flex  justify-center bg-orange-950 text-neutral-100 text-center w-full py-4 fixed bottom-0">
+          <div className="flex  justify-center bg-nikola-700 text-neutral-100 text-center w-full py-4 fixed bottom-0">
             připravuji nový web{" "}
             <svg
               className="ml-4 w-5 fill-slate-100"
