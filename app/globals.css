@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Italianno&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap"); */
+.Heading {
+  font-family: "Great Vibes", cursive !important;
+  /* font-family: "Parisienne", cursive !important; */
+  /* font-family: "Italianno", cursive !important; */
+  /* font-family: "Lora", serif !important; */
+}
