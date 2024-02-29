@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Explora&family=Great+Vibes&family=Italianno&family=Parisienne&display=swap");
+
+.font-heading {
+  font-family: "Great Vibes", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-heading2 {
+  font-family: "Parisienne", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-heading3 {
+  font-family: "Italianno", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
+.font-heading4 {
+  font-family: "Explora", serif !important;
+  font-weight: 400;
+  font-style: normal;
+}

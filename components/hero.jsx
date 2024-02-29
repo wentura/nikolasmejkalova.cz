@@ -5,7 +5,7 @@ export default function Hero() {
         {/* logo - start */}
         <a
           href="/"
-          className="inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
+          className="hidden lg:inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
           aria-label="logo"
         >
           Nikola Smejkalová
@@ -13,7 +13,7 @@ export default function Hero() {
         {/* logo - end */}
 
         {/* nav - start */}
-        <nav className="hidden gap-12 lg:flex">
+        <nav className="gap-12 flex justify-end w-full lg:w-auto">
           <a
             href="#"
             className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
@@ -36,16 +36,14 @@ export default function Hero() {
         {/* nav - end */}
       </div>
 
-      <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 lg:flex-row">
+      <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 md:flex-row">
         {/* content - start */}
         <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
-          <p className="text-xs mb-2 font-extralight md:text-base">jsem</p>
-
-          <h1 className="mb-0 text-4xl font-bold text-black sm:text-6xl md:text-7xl ">
+          <h1 className="mb-0 text-4xl font-bold text-black md:text-6xl lg:text-7xl ">
             Nikola Smejkalová
           </h1>
 
-          <p className="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 xl:text-lg">
+          <p className="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 text-lg">
             facilitátorka metody PSYCH-K®
           </p>
 
@@ -54,14 +52,14 @@ export default function Hero() {
               href="#"
               className="text-gray-900 text-xl py-4 px-8 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500"
             >
-              chci sjednat schůzku
+              chci si sjednat schůzku
             </a>
           </div>
         </div>
         {/* content - end */}
 
         {/* image - start */}
-        <div className="h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
+        <div className="h-auto w-72 md:w-full md:max-w-xl mx-auto overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-5/12">
           <img
             src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
             loading="lazy"

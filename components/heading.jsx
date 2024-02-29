@@ -1,9 +1,12 @@
 import React from "react";
-
-export default function Heading({ title, text }) {
+// const inter = Inter();
+// const lora = Lora();
+export default function Heading({ title, text, klass }) {
   return (
-    <div className="mx-auto max-full px-4 md:px-8 bg-yellow-600 bg-opacity-10 my-12 py-24 lg:py-36 shadow-xl">
-      <h2 className="mb-2 text-center text-4xl  text-gray-800 lg:text-7xl Heading">
+    <div className="mx-auto max-full px-4 md:px-8 bg-yellow-600 bg-opacity-10 my-2 py-24 lg:py-24 shadow-xl">
+      <h2
+        className={`${klass} mb-2 text-center text-4xl sm:text-5xl text-gray-800 lg:text-7xl`}
+      >
         {title}
       </h2>
 
