@@ -1,41 +1,8 @@
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8 bg-white pb-12 sm:pb-24 lg:pb-36">
-      <div className="mb-8 flex items-center justify-between py-4 md:mb-12 md:py-8 xl:mb-16">
-        {/* logo - start */}
-        <a
-          href="/"
-          className="hidden lg:inline-flex items-center gap-2.5 text-2xl font-bold text-black md:text-3xl"
-          aria-label="logo"
-        >
-          Nikola Smejkalová
-        </a>
-        {/* logo - end */}
-
-        {/* nav - start */}
-        <nav className="gap-12 flex justify-end w-full lg:w-auto">
-          <a
-            href="#"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-          >
-            Terapie
-          </a>
-          <a
-            href="#"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-          >
-            dsfklh
-          </a>
-          <a
-            href="#"
-            className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
-          >
-            About
-          </a>
-        </nav>
-        {/* nav - end */}
-      </div>
-
       <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 md:flex-row">
         {/* content - start */}
         <div className="flex flex-col justify-center sm:text-center lg:py-12 lg:text-left xl:w-5/12 xl:py-24">
@@ -48,12 +15,12 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
-            <a
-              href="#"
+            <Link
+              href="/kontakt"
               className="text-gray-900 text-xl py-4 px-8 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500"
             >
               chci si sjednat schůzku
-            </a>
+            </Link>
           </div>
         </div>
         {/* content - end */}

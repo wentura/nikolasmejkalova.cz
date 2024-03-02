@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="bg-white py-6 sm:py-8 lg:py-12">
+    <div className="bg-yellow-600 bg-opacity-10 py-12 sm:py-16 lg:py-24">
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         {/* quote - start */}
         <div className="flex flex-col items-center gap-4 md:gap-6">

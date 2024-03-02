@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Footer() {
@@ -6,41 +7,59 @@ export default function Footer() {
       <div className="flex flex-col items-center border-t pt-6">
         {/* nav - start */}
         <nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
-          <a
-            href="#"
-            className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+          <Link
+            href="/"
+            className="text-gray-500 transition duration-100 hover:text-yellow-600"
           >
-            About
-          </a>
-          <a
-            href="#"
-            className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            Nikola Smejkalová
+          </Link>
+          <Link
+            href="/terapie"
+            className="text-gray-500 transition duration-100 hover:text-yellow-600"
           >
-            Investor Relations
-          </a>
-          <a
-            href="#"
-            className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            terapie
+          </Link>
+          <Link
+            href="/metoda"
+            className="text-gray-500 transition duration-100 hover:text-yellow-600"
           >
-            Jobs
-          </a>
-          <a
-            href="#"
-            className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            metoda
+          </Link>
+          <Link
+            href="recenze"
+            className="text-gray-500 transition duration-100 hover:text-yellow-600"
           >
-            Press
-          </a>
-          <a
-            href="#"
-            className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+            recenze
+          </Link>
+          {/* <Link
+            href="/blog"
+            className="text-gray-500 transition duration-100 hover:text-yellow-600"
           >
-            Blog
-          </a>
+            blog
+          </Link> */}
+          <Link
+            href="/akce"
+            className="text-gray-500 transition duration-100 hover:text-yellow-600"
+          >
+            akce
+          </Link>
+          <Link
+            href="/cenik"
+            className="text-gray-500 transition duration-100 hover:text-yellow-600"
+          >
+            ceník
+          </Link>
+          <Link
+            href="/kontakt"
+            className="text-gray-500 transition duration-100 hover:text-yellow-600"
+          >
+            kontakt
+          </Link>
         </nav>
         {/* nav - end */}
 
         {/* social - start */}
-        <div className="flex gap-4">
+        <div className="gap-4 hidden">
           <a
             href="#"
             target="_blank"
@@ -113,7 +132,10 @@ export default function Footer() {
       </div>
 
       <div className="py-8 text-center text-sm text-gray-400">
-        © 2021 - Present Flowrift. All rights reserved.
+        Nikola Smejkalová © 2020 - 2024 vytvořil{" "}
+        <a href="https://www.zbyneksvoboda.cz" target="_blank" className="">
+          Zbyněk Svoboda
+        </a>
       </div>
     </div>
   );

@@ -1,13 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&family=Ephesis&display=swap");
-.font-heading {
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+.font-heading,
+blockquote {
   font-family: "Alex Brush", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-.font-heading4,
-.font-heading3,
-.font-heading2 {
-  font-family: "Ephesis", cursive;
   font-weight: 400;
   font-style: normal;
 }

@@ -1,9 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
 export default function How() {
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
-      <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+      <div className="mx-auto max-w-screen-2xl px-4 md:px-8 text-lg">
         {/* text - start */}
 
         {/* text - end */}
@@ -40,7 +41,14 @@ export default function How() {
           {/* question - end */}
 
           {/* question - start */}
-          <div className="hidden xl:inline-block">&nbsp;</div>
+          <div className="">
+            <img
+              src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4254copy_dcxwz5.webp"
+              loading="lazy"
+              alt="Nikola Smejkalova"
+              className="h-full w-full object-cover object-center rounded-lg shadow-lg  max-w-lg mx-auto"
+            />
+          </div>
           {/* question - end */}
 
           {/* question - start */}
@@ -68,9 +76,11 @@ export default function How() {
 
           {/* question - start */}
           <div className="mt-7">
-            <p className="text-gray-900 text-xl py-4 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500">
-              chci sjednat schůzku
-            </p>
+            <Link href="/kontakt">
+              <p className="text-gray-900 text-xl py-4 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500">
+                chci sjednat schůzku
+              </p>
+            </Link>
           </div>
           {/* question - end */}
         </div>

@@ -1,180 +1,83 @@
+import { sanitize } from "isomorphic-dompurify";
 import React from "react";
+import { recenze } from "./recenze_data";
 
-export default function Recenze() {
+export default function Recenze({ lp }) {
   return (
-    <div className="mx-auto max-w-screen-xl px-4 md:px-8 py-6 sm:py-8 lg:py-12 mt-24">
-      <div className="grid gap-y-10 sm:grid-cols-2 sm:gap-y-12 md:gap-y-24 lg:grid-cols-3 ">
+    <div className="mx-auto max-w-screen-2xl px-4 md:px-8 py-6 sm:py-8 lg:py-12 mt-24 text-gray-500">
+      <h3 className="mb-2 text-left text-xl font-bold text-gray-600 sm:text-2xl md:mb-3">
+        Řekli o mě...
+      </h3>
+      <div className="flex flex-wrap">
         {/* quote - start */}
-        <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-          <div className="text-center text-gray-600">
-            Nejdriv jsem tomu vubec neveril, ale zena prisla nadsena a i ja jsem
-            pocitil zlepseni mych stavu, ktere po nejake dobe samy odeznely.
-          </div>
-
-          <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-            <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-              <img
-                src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
-                loading="lazy"
-                alt="Photo by Radu Florin"
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                John McCulling
+        {lp == 1 ? (
+          <div className="flex flex-wrap">
+            <div
+              key={recenze[3].name}
+              className="flex flex-col px-4 my-4 gap-4 w-full lg:w-1/3 md:w-1/2"
+            >
+              <div className="text-left border-t-8 border-t-gray-200 ">
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(recenze[3].text),
+                  }}
+                />
               </div>
-              <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                uplne normalni typek{" "}
+
+              <div className="text-6xl text-right text-gray-300 font-extralight">
+                {recenze[3].name}
+              </div>
+            </div>
+            <div
+              key={recenze[4].name}
+              className="flex flex-col px-4 my-4 gap-4 w-full lg:w-1/3 md:w-1/2"
+            >
+              <div className="text-left border-t-8 border-t-gray-200 ">
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(recenze[4].text),
+                  }}
+                />
+              </div>
+
+              <div className="text-6xl text-right text-gray-300 font-extralight">
+                {recenze[4].name}
+              </div>
+            </div>
+            <div className="mx-auto">
+              <p className="text-center pt-12">
+                <a
+                  href="/recenze"
+                  className="text-gray-500 text-xl py-4 px-8 text-center border-4 border-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:border-amber-500"
+                >
+                  více ohlasů mých klientů
+                </a>
               </p>
             </div>
           </div>
-        </div>
-        {/* quote - end */}
+        ) : (
+          recenze.map((recen) => {
+            return (
+              <div
+                key={recen.name}
+                className="flex flex-col px-4 my-4 gap-4 w-full md:w-1/2"
+              >
+                <div className="text-left border-t-8 border-t-gray-200 ">
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: DOMPurify.sanitize(recen.text),
+                    }}
+                  />
+                </div>
 
-        {/* quote - start */}
-        <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-          <div className="text-center text-gray-600">
-            “This is a section of some simple filler text, also known as
-            placeholder text.”
-          </div>
-
-          <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-            <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-              <img
-                src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
-                loading="lazy"
-                alt="Photo by christian ferrer"
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                Kate Berg
+                <div className="text-6xl text-right text-gray-300 font-extralight">
+                  {recen.name}
+                </div>
               </div>
-              <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                CFO / Dashdash
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* quote - end */}
+            );
+          })
+        )}
 
-        {/* quote - start */}
-        <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-          <div className="text-center text-gray-600">
-            “This is a section of some simple filler text, also known as
-            placeholder text.”
-          </div>
-
-          <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-            <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-              <img
-                src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500"
-                loading="lazy"
-                alt="Photo by Ayo Ogunseinde"
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                Greg Jackson
-              </div>
-              <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                CTO / Uptime
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* quote - end */}
-        {/* quote - start */}
-        <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-          <div className="text-center text-gray-600">
-            Nejdriv jsem tomu vubec neveril, ale zena prisla nadsena a i ja jsem
-            pocitil zlepseni mych stavu, ktere po nejake dobe samy odeznely.
-          </div>
-
-          <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-            <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-              <img
-                src="https://images.unsplash.com/photo-1567515004624-219c11d31f2e??auto=format&q=75&fit=crop&w=112"
-                loading="lazy"
-                alt="Photo by Radu Florin"
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                John McCulling
-              </div>
-              <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                uplne normalni typek{" "}
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* quote - end */}
-
-        {/* quote - start */}
-        <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-          <div className="text-center text-gray-600">
-            “This is a section of some simple filler text, also known as
-            placeholder text.”
-          </div>
-
-          <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-            <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-              <img
-                src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=112"
-                loading="lazy"
-                alt="Photo by christian ferrer"
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                Kate Berg
-              </div>
-              <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                CFO / Dashdash
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* quote - end */}
-
-        {/* quote - start */}
-        <div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
-          <div className="text-center text-gray-600">
-            “This is a section of some simple filler text, also known as
-            placeholder text.”
-          </div>
-
-          <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
-            <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
-              <img
-                src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500"
-                loading="lazy"
-                alt="Photo by Ayo Ogunseinde"
-                className="h-full w-full object-cover object-center"
-              />
-            </div>
-
-            <div>
-              <div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-                Greg Jackson
-              </div>
-              <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
-                CTO / Uptime
-              </p>
-            </div>
-          </div>
-        </div>
         {/* quote - end */}
       </div>
     </div>
