@@ -6,7 +6,7 @@ blockquote {
   font-style: normal;
 }
 .btn-primary {
-  /* @apply text-gray-900 text-xl px-6 py-4 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500; */
-  @apply text-gray-900 text-xl px-6 py-4 text-center  rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500;
-  background-color: #deb682;
+  @apply text-gray-900 text-xl px-6 py-4 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500;
+  /* @apply text-gray-900 text-xl px-6 py-4 text-center  rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500; */
+  /* background-color: #deb682; */
 }

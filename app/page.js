@@ -11,17 +11,17 @@ export default function Home() {
   return (
     <main>
       <Hero />
+      <Sluzby />
       <Heading
         title="Pomohu vám zbavit se neprospěšného myšlení"
         text="a nahradit to myšlenkami prosperujícími, se kterými porostete."
         klass="font-heading"
       />
-      <Sluzby />
-      <Heading
+      {/* <Heading
         title="Ráda vám ukážu jak změnit váš svět"
         text=" a jak se můžete stát tvořitelem vašeho života."
         klass="font-heading"
-      />
+      /> */}
       <How />
       <Heading title="Odpovědí jsi ty sám" text="" klass="font-heading" />
       <Content />
