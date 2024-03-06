@@ -10,19 +10,18 @@ export default function Recenze({ lp }) {
       </h3>
       <div className="flex flex-wrap">
         {/* quote - start */}
-        {lp == 1 ? (
+        {lp ? (
           <div className="flex flex-wrap">
             <div
               key={recenze[3].name}
               className="flex flex-col px-4 my-4 gap-4 w-full lg:w-1/3 md:w-1/2"
             >
-              <div className="text-left border-t-8 border-t-gray-200 ">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(recenze[3].text),
-                  }}
-                ></p>
-              </div>
+              <div
+                className="text-left border-t-8 border-t-gray-200"
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(recenze[3].text),
+                }}
+              ></div>
 
               <div className="text-6xl text-right text-gray-300 font-extralight">
                 {recenze[3].name}
@@ -32,13 +31,12 @@ export default function Recenze({ lp }) {
               key={recenze[4].name}
               className="flex flex-col px-4 my-4 gap-4 w-full lg:w-1/3 md:w-1/2"
             >
-              <div className="text-left border-t-8 border-t-gray-200 ">
-                <p
-                  dangerouslySetInnerHTML={{
-                    __html: DOMPurify.sanitize(recenze[4].text),
-                  }}
-                />
-              </div>
+              <div
+                className="text-left border-t-8 border-t-gray-200 "
+                dangerouslySetInnerHTML={{
+                  __html: DOMPurify.sanitize(recenze[4].text),
+                }}
+              ></div>
 
               <div className="text-6xl text-right text-gray-300 font-extralight">
                 {recenze[4].name}
@@ -62,13 +60,12 @@ export default function Recenze({ lp }) {
                 key={recen.name}
                 className="flex flex-col px-4 my-4 gap-4 w-full md:w-1/2"
               >
-                <div className="text-left border-t-8 border-t-gray-200 ">
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: DOMPurify.sanitize(recen.text),
-                    }}
-                  />
-                </div>
+                <div
+                  className="text-left border-t-8 border-t-gray-200 "
+                  dangerouslySetInnerHTML={{
+                    __html: DOMPurify.sanitize(recen.text),
+                  }}
+                ></div>
 
                 <div className="text-6xl text-right text-gray-300 font-extralight">
                   {recen.name}

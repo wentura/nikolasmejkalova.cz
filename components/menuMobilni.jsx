@@ -1,18 +1,15 @@
 "use client";
-
 import Link from "next/link";
 import React, { useState } from "react";
+import { menuData } from "./menuData";
 export default function MenuMobilni() {
-  //   const [isOpen, setIsOpen] = useState(false);
-  console.log("test");
-  let [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   function toggleMenu() {
-    console.log("first");
     setIsOpen(!isOpen);
   }
   return (
     <div className="mobilniMenu">
-      <button className="flex justify-end p-4 md:hidden" onClick={toggleMenu}>
+      <button className="flex justify-end p-4 lg:hidden" onClick={toggleMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -49,17 +46,27 @@ export default function MenuMobilni() {
             ></path>
           </svg>
         </button>
-        <ul className="flex flex-col gap-y-4 w-full items-center text-xl my-12">
-          <li className="flex">
-            test
-            {/* <Link
-              rel="noopener noreferrer"
-              href="/ubytovani"
-              className="flex items-center px-4 -mb-1 hover:underline transition duration-300 ease-in-out underline-offset-4"
+        <ul className="flex flex-col gap-y-2 w-full items-center text-xl my-2">
+          <li className="flex px-8 py-4" key="home">
+            <Link
+              href="/"
+              className="font-semibold text-gray-600 transition duration-100 hover:text-yellow-600 text-4xl font-heading"
             >
-              ubytování
-            </Link> */}
+              Nikola Smejkalová
+            </Link>{" "}
           </li>
+          {menuData.map((menu) => {
+            return (
+              <li className="flex py-2" key={menu.link}>
+                <Link
+                  href={`/${menu.link}`}
+                  className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-600"
+                >
+                  {menu.title}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </div>

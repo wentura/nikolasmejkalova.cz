@@ -13,7 +13,7 @@ export const recenze = [
   },
   {
     name: "Jarda",
-    text: "<p><strong>Dva roky jsem trpěl</strong> na hemeroidy a nic nepomáhalo, po balancu u tebe a po splnění akčního kroku přišel okamžitý relax na záchodě a hemeroidy byly do týdne pryč úplně.</p>",
+    text: "<p>Dva roky jsem trpěl na hemeroidy a nic nepomáhalo, po balancu u tebe a po splnění akčního kroku přišel okamžitý relax na záchodě a hemeroidy byly do týdne pryč úplně.</p>",
     id: 0,
   },
   {

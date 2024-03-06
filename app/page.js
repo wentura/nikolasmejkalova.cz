@@ -5,13 +5,11 @@ import How from "@/components/how";
 import Menu from "@/components/menu";
 import Recenze from "@/components/recenze";
 import Sluzby from "@/components/sluzby";
-import Image from "next/image";
 import "./globals.css";
 export default function Home() {
   return (
     <main>
       <Menu />
-
       <Hero />
       <Sluzby />
       <Heading
@@ -28,7 +26,7 @@ export default function Home() {
       <Heading title="Odpovědí jsi ty sám" text="" klass="font-heading" />
       <Content />
       <Heading title="Vše souvisí se vším." text="" klass="font-heading" />
-      <Recenze lp="1" />
+      <Recenze lp="true" />
     </main>
   );
 }

@@ -1,6 +1,4 @@
 import Link from "next/link";
-import PsychK from "./pshychK";
-
 export default function Hero() {
   return (
     <div className="mx-auto w-full bg-yellow-600 bg-opacity-10">
@@ -11,7 +9,7 @@ export default function Hero() {
             <div>
               <img
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
-                className="sepia opacity-70 md:-top-12 md:w-2/3 lg:w-4/5 xl:w-3/5 hidden md:flex relative lg:-top-24 xl:-top-48 lg:left-4 border border-red-500"
+                className="sepia opacity-70 md:-top-12 md:w-2/3 lg:w-4/5 xl:w-3/5 hidden md:flex relative lg:-top-20 xl:-top-40 lg:left-4"
               />
             </div>
             <h1 className="mb-0 text-4xl font-extralight md:text-6xl lg:text-8xl font-heading relative xl:-top-24">
