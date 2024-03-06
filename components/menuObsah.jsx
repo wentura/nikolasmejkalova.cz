@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import MenuMobilni from "./menuMobilni";
 import PsychK from "./pshychK";
 
 export default function Menu() {
@@ -65,9 +66,8 @@ export default function Menu() {
           </Link>
         </nav>
         {/* nav - end */}
-        <nav className="flex flex-col fixed right-2 top-2 lg:hidden border-2 border-gray-400 text-gray-600 transition duration-100 hover:border-gray-600 px-2 py-2 rounded-xl">
-          hamb
-        </nav>
+        <MenuMobilni />
+        {/* <nav className="">hamb</nav> */}
       </div>
     </div>
   );

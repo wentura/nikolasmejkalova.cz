@@ -10,10 +10,12 @@ export default function RootLayout({ children }) {
       <Head>
         <title>Nikola Smejkalová</title>
       </Head>
-      <Menu />
-      <main className="">{children}</main>
-      <Contact />
-      <Footer />
+      <body>
+        <Menu />
+        <main className="">{children}</main>
+        <Contact />
+        <Footer />
+      </body>
     </html>
   );
 }

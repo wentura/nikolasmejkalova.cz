@@ -21,7 +21,7 @@ export default function Recenze({ lp }) {
                   dangerouslySetInnerHTML={{
                     __html: DOMPurify.sanitize(recenze[3].text),
                   }}
-                />
+                ></p>
               </div>
 
               <div className="text-6xl text-right text-gray-300 font-extralight">
