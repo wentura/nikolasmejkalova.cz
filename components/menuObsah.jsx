@@ -5,14 +5,24 @@ import PsychK from "./pshychK";
 export default function Menu() {
   return (
     <div className="mx-auto w-full bg-yellow-600 bg-opacity-10">
-      <div className="px-4 mx-auto max-w-screen-2xl  flex items-center justify-end py-4 md:py-8 xl:py-12">
+      <div className="px-4 mx-auto max-w-screen-2xl  flex items-center justify-between py-4 md:py-8 xl:py-12">
         {/* logo - start */}
 
         {/* <PsychK
           klass={"sepia opacity-70 scale-50 -translate-x-36 -translate-y-36"}
           height={100}
         /> */}
-
+        <Link
+          href="/"
+          className="gap-2.5 text-3xl font-bold md:text-5xl leading-6 flex items-center font-heading"
+          aria-label="logo"
+        >
+          <img
+            src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
+            className="sepia opacity-70 w-10 md:w-16"
+          />
+          Nikola Smejkalová
+        </Link>
         {/* logo - end */}
 
         {/* nav - start */}
@@ -55,7 +65,7 @@ export default function Menu() {
           </Link>
         </nav>
         {/* nav - end */}
-        <nav className="flex flex-col fixed lg:hidden border-2 border-gray-400 text-gray-600 transition duration-100 hover:border-gray-600 px-2 py-2 rounded-xl right-2 top-2">
+        <nav className="flex flex-col fixed right-2 top-2 lg:hidden border-2 border-gray-400 text-gray-600 transition duration-100 hover:border-gray-600 px-2 py-2 rounded-xl">
           hamb
         </nav>
       </div>

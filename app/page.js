@@ -2,14 +2,16 @@ import Content from "@/components/content";
 import Heading from "@/components/heading";
 import Hero from "@/components/hero";
 import How from "@/components/how";
+import Menu from "@/components/menu";
 import Recenze from "@/components/recenze";
 import Sluzby from "@/components/sluzby";
-
 import Image from "next/image";
 import "./globals.css";
 export default function Home() {
   return (
     <main>
+      <Menu />
+
       <Hero />
       <Sluzby />
       <Heading
