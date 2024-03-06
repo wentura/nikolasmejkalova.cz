@@ -15,10 +15,7 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-start">
-            <Link
-              href="/kontakt"
-              className="text-gray-900 text-xl py-4 px-8 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500"
-            >
+            <Link href="/kontakt" className="btn-primary">
               chci si sjednat schůzku
             </Link>
           </div>

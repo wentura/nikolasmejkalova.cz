@@ -77,9 +77,7 @@ export default function How() {
           {/* question - start */}
           <div className="mt-7">
             <Link href="/kontakt">
-              <p className="text-gray-900 text-xl py-4 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500">
-                chci sjednat schůzku
-              </p>
+              <p className="btn-primary">chci sjednat schůzku</p>
             </Link>
           </div>
           {/* question - end */}
