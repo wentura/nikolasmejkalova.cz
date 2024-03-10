@@ -3,12 +3,12 @@ import Footer from "@/components/footer";
 import Menu from "@/components/menuObsah";
 import "@/public/style.css";
 import "../globals.css";
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
     <html lang="en">
       <body>
         <Menu />
-        {children}
+        <main className="main">{children}</main>
         <Contact />
         <Footer />
       </body>
