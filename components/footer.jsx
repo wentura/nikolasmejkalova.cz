@@ -37,12 +37,7 @@ export default function Footer() {
           >
             blog
           </Link> */}
-          <Link
-            href="/akce"
-            className="text-gray-500 transition duration-100 hover:text-yellow-600"
-          >
-            akce
-          </Link>
+
           <Link
             href="/cenik"
             className="text-gray-500 transition duration-100 hover:text-yellow-600"
