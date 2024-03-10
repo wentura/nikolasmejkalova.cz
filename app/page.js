@@ -1,4 +1,6 @@
+import Contact from "@/components/contact";
 import Content from "@/components/content";
+import Footer from "@/components/footer";
 import Heading from "@/components/heading";
 import Hero from "@/components/hero";
 import How from "@/components/how";
@@ -6,6 +8,7 @@ import Menu from "@/components/menu";
 import Recenze from "@/components/recenze";
 import Sluzby from "@/components/sluzby";
 import "./globals.css";
+
 export default function Home() {
   return (
     <main>
@@ -27,6 +30,8 @@ export default function Home() {
       <Content />
       <Heading title="Vše souvisí se vším." text="" klass="font-heading" />
       <Recenze lp="true" />
+      <Contact />
+      <Footer />
     </main>
   );
 }

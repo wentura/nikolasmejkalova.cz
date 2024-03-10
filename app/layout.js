@@ -7,8 +7,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning={true}>
       <body>
         <main className="main">{children}</main>
-        <Contact />
-        <Footer />
+        
       </body>
     </html>
   );
