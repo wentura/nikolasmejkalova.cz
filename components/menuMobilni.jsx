@@ -50,7 +50,7 @@ export default function MenuMobilni() {
           <li className="flex px-8 py-4" key="home">
             <Link
               href="/"
-              className="font-semibold text-gray-600 transition duration-100 hover:text-yellow-600 text-4xl font-heading"
+              className=" text-gray-600 transition duration-100 hover:text-yellow-600 font-heading text-4xl font-extralight md:text-6xl lg:text-8xl font-heading"
             >
               Nikola Smejkalová
             </Link>{" "}

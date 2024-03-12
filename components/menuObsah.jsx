@@ -9,7 +9,7 @@ export default function Menu() {
       <div className="px-4 mx-auto max-w-screen-2xl flex items-center justify-between py-4 md:py-6 xl:py-8">
         <Link
           href="/"
-          className="gap-2.5 text-3xl font-bold md:text-5xl leading-6 flex items-center font-heading"
+          className="gap-2.5 text-3xl  md:text-5xl leading-6 flex items-center font-heading  font-extralight lg:text-8xl font-heading"
           aria-label="logo"
         >
           <img
