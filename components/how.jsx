@@ -76,8 +76,8 @@ export default function How() {
 
           {/* question - start */}
           <div className="mt-7">
-            <Link href="/kontakt">
-              <p className="btn-primary">chci sjednat schůzku</p>
+            <Link href="/kontakt" className="btn-primary">
+              chci sjednat schůzku
             </Link>
           </div>
           {/* question - end */}
@@ -86,7 +86,6 @@ export default function How() {
           <h2 className="mt-8 text-center text-xl font-bold text-gray-800 md:mb-6 lg:text-2xl">
             Lze pracovat online.
           </h2>
-          <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg"></p>
         </div>
       </div>
     </div>
