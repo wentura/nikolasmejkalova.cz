@@ -29,7 +29,7 @@ export default function Footer() {
             href="recenze"
             className="text-gray-500 transition duration-100 hover:text-yellow-600"
           >
-            recenze
+            recenzez
           </Link>
           {/* <Link
             href="/blog"
