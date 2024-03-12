@@ -5,8 +5,12 @@ export default function Hero() {
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8 pb-6 sm:pb-10 lg:pb-16 ">
         <section className="flex flex-col justify-between gap-6 sm:gap-10 md:gap-16 md:flex-row">
           {/* content - start */}
-          <div className="flex flex-col sm:text-center lg:py-12 lg:text-left xl:w-6/12 xl:py-24">
-            <div>
+          <div className="flex flex-col text-center lg:py-12 lg:text-left xl:w-6/12 xl:py-24">
+            <div className="relative">
+              <img
+                src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
+                className="sepia opacity-70 md:hidden absolute -top-12 w-12"
+              />
               <img
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
                 className="sepia opacity-70 md:-top-12 md:w-2/5 lg:w-2/5 xl:w-1/3 hidden md:flex relative lg:-top-20 xl:-top-40 lg:left-4"
