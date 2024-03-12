@@ -40,14 +40,14 @@ export default function Contact() {
           </div>
           <div className="pt-4">
             <a
-              href="mailto:info@nikolasmejkalova.cz"
+              href="mailto:nsnikola@seznam.cz"
               className="text-gray-900 text-xl py-4 px-8 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500 flex w-80 justify-between"
             >
               <img
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707679724/nikolasmejkalova_cz/mail_rhkiyo.svg"
                 className="w-6"
               />
-              <span className="w-72 text-center">info@nikolasmejkalova.cz</span>
+              <span className="w-72 text-center">nsnikola@seznam.cz</span>
             </a>
           </div>
         </div>
