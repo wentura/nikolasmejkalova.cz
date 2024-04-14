@@ -61,6 +61,7 @@ export default function MenuMobilni() {
                 <Link
                   href={`/${menu.link}`}
                   className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-600"
+                  onClick={toggleMenu}
                 >
                   {menu.title}
                 </Link>
