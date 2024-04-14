@@ -11,10 +11,10 @@ export const menuData = [
     link: "recenze",
     title: "recenze",
   },
-  // {
-  //   link: "akce",
-  //   title: "akce",
-  // },
+  {
+    link: "blog",
+    title: "blog",
+  },
   {
     link: "cenik",
     title: "ceník",
