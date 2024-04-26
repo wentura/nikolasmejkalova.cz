@@ -45,7 +45,7 @@ export default function How() {
             <img
               src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4254copy_dcxwz5.webp"
               loading="lazy"
-              alt="Nikola Smejkalova"
+              alt="Nikola Smejkalova, květiny"
               className="h-full w-full object-cover object-center rounded-lg shadow-lg  max-w-lg mx-auto"
             />
           </div>
@@ -75,14 +75,17 @@ export default function How() {
           {/* question - end */}
 
           {/* question - start */}
-          <div className="mt-7">
-            <Link href="/kontakt" className="btn-primary">
+          <div className="mt-7 flex">
+            <Link
+              href="/kontakt"
+              className="btn-primary mx-auto align-middle h-14"
+            >
               chci sjednat schůzku
             </Link>
           </div>
           {/* question - end */}
         </div>
-        <div className="mb-10 md:mb-16">
+        <div className="mb-10 md:mb-16 text-center sm:text-left">
           <h2 className="mt-8 text-center text-xl font-bold text-gray-800 md:mb-6 lg:text-2xl">
             Lze pracovat online.
           </h2>

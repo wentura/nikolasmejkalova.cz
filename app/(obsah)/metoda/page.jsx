@@ -13,7 +13,7 @@ export default function Metoda() {
                 <img
                   src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4262copy_j6zeks.webp"
                   loading="lazy"
-                  alt=""
+                  alt="Nikola Smejkalová, mandala"
                   className="h-full w-full object-cover object-center"
                 />
               </div>
@@ -28,8 +28,9 @@ export default function Metoda() {
                   epigenetiky).
                 </p>
                 <p className="mb-6 text-gray-500 sm:text-xl md:mb-8">
-                  Pomocí této metody se zbavujeme svých negativních přesvědčení
-                  a ty pak nahrazujeme přesvědčeními pozitivními. V ČR je to
+                  Pomocí této metody se{" "}
+                  <strong>zbavujeme svých negativních přesvědčení</strong> a ty
+                  pak nahrazujeme přesvědčeními pozitivními. V ČR je to
                   &quot;mladá&quot; forma terapie, avšak hodně efektvní.
                 </p>
                 <p className="mb-6 text-gray-500 sm:text-xl md:mb-8">

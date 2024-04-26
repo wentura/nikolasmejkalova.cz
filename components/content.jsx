@@ -8,7 +8,7 @@ export default function Content() {
           <img
             src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4242copy_r4cwp0.webp"
             loading="lazy"
-            alt="Nikola Smejkalova"
+            alt="Nikola Smejkalova, klidné a příjemné prostředí pro terapii Psych-K"
             className="h-full w-full object-cover object-center"
           />
         </div>

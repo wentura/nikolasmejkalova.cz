@@ -15,6 +15,7 @@ export default function Menu() {
           <img
             src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
             className="sepia opacity-70 w-10 md:w-16"
+            alt="logo metody Psych-K"
           />
           Nikola Smejkalová
         </Link>

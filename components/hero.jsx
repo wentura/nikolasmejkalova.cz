@@ -10,10 +10,12 @@ export default function Hero() {
               <img
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
                 className="sepia opacity-70 md:hidden absolute -top-12 w-12"
+                alt="logo metody Psych-K"
               />
               <img
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
                 className="sepia opacity-70 md:-top-12 md:w-2/5 lg:w-2/5 xl:w-1/3 hidden md:flex relative lg:-top-20 xl:-top-40 lg:left-4"
+                alt="logo metody Psych-K"
               />
             </div>
             <h1 className="mb-0 text-4xl font-extralight md:text-6xl lg:text-8xl font-heading relative xl:-top-24">
@@ -35,7 +37,7 @@ export default function Hero() {
             <img
               src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
               loading="lazy"
-              alt="Nikola Smejkalova"
+              alt="Nikola Smejkalova, Vaše facilitátorka metody Psych-K"
               className="h-full w-full object-cover object-center"
             />
           </div>

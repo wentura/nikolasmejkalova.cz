@@ -7,7 +7,7 @@ export default function Matomo() {
         referrerPolicy="no-referrer-when-downgrade"
         src="http://matomo.zbyneksvoboda.cz/matomo.php?idsite=11&amp;rec=1"
         className="border-0"
-        alt=""
+        alt="matomo analytics"
       />
     </div>
   );

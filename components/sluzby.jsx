@@ -11,7 +11,7 @@ export default function Sluzby() {
               <img
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4259copy_a2kqzf.webp"
                 loading="lazy"
-                alt=""
+                alt="Nikola Smejkalová a její terapeitucké křesílko"
                 className="h-full w-full object-cover object-center"
               />
             </div>

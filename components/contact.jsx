@@ -21,7 +21,7 @@ export default function Contact() {
               <img
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
                 loading="lazy"
-                alt="Nikola Smejkalová"
+                alt="Nikola Smejkalová, Vaše facilitátorka metody Psych-K"
                 className="h-full w-full object-cover object-center"
               />
             </div>
