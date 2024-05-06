@@ -22,11 +22,7 @@ export default function Metoda() {
                 <h2 className="mt-8 md:mt-0 text-center text-3xl md:text-4xl mb-2 text-gray-600">
                   Psych-K&reg;
                 </h2>
-                <p className="mb-6 text-gray-500 sm:text-xl md:mb-8">
-                  Metodu vyvinul Rob Williams a jeho kolega a přítel Dr. Bruce
-                  H. Lipton, Ph.D. (vědec, buněčný biolog, průkopník
-                  epigenetiky).
-                </p>
+
                 <p className="mb-6 text-gray-500 sm:text-xl md:mb-8">
                   Pomocí této metody se{" "}
                   <strong>zbavujeme svých negativních přesvědčení</strong> a ty
@@ -36,6 +32,10 @@ export default function Metoda() {
                 <p className="mb-6 text-gray-500 sm:text-xl md:mb-8">
                   Změníme-li svá vnitřní přesvědčení, změníme svou vnitřní
                   biologii.
+                </p>
+                <p className="mb-6 text-gray-500 sm:text-xl md:mb-8">
+                  Metodu vyvinul Rob Williams a jeho kolega a přítel Bruce H.
+                  Lipton, Ph.D. (vědec, buněčný biolog, průkopník epigenetiky).
                 </p>
               </div>
             </div>

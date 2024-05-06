@@ -2,9 +2,9 @@
 import Heading from "@/components/heading";
 import How from "@/components/how";
 import Sluzby from "@/components/sluzby";
+import defImg from "@/public/defImg.png";
 import { gql, useMutation, useQuery } from "@apollo/client";
 import React from "react";
-
 // const GET_NABIDKA = gql`
 //   query GetPosts {
 //     posts(where: { categoryName: "blog" }) {
@@ -55,7 +55,7 @@ const GET_NABIDKA = gql`
 
 export default function Blog() {
   const { loading, error, data, refetch } = useQuery(GET_NABIDKA);
-
+  const images = [];
   return (
     <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12">
       <div className="">
@@ -69,17 +69,19 @@ export default function Blog() {
             >
               <div className="bg-white py-6 sm:py-8 lg:py-12">
                 <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-                  <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+                  <div className="grid gap-8 md:grid-cols-3 lg:gap-12">
                     <div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto">
                       <img
                         src={`${post.featuredImage.node.sourceUrl}`}
+                        // src="./defImg.png"
+
                         loading="lazy"
                         alt={`${post.featuredImage.node.altText}`}
                         className="h-full w-full object-cover object-center"
                       />
                     </div>
 
-                    <div className="md:pt-8">
+                    <div className="md:col-span-2 md:pt-8">
                       <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
                         <a
                           href={`/blogPosts/${post.id}`}

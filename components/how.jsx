@@ -54,10 +54,10 @@ export default function How() {
           {/* question - start */}
           <div>
             <h3 className="xl:mb-4 text-lg font-semibold text-gray-700 md:text-xl">
-              jak dlouho trvá scházka?
+              Jak dlouho trvá schůzka?
             </h3>
             <p className="text-gray-500">
-              Naše schůzka zabere cca hodinku až hodinku a půl.
+              Naše schůzka zabere cca hodinu až hodinu a půl.
             </p>
           </div>
           {/* question - end */}
@@ -65,10 +65,14 @@ export default function How() {
           {/* question - start */}
           <div>
             <h3 className="xl:mb-4 text-lg font-semibold text-gray-700 md:text-xl">
-              zvládnu to i já?
+              Zvládnu to i já?
             </h3>
             <p className="text-gray-500">
-              Je to jednoduchá, rychlá a neinvazivní metoda, tím je velice
+              Samostatně terapii zvádnou děti od 7 let a mému nejstaršímu
+              klientovi je přes 90 let.
+            </p>
+            <p className="text-gray-500 pt-2">
+              Je to jednoduchá, rychlá a neinvazivní metoda. Je velice
               efektivní.
             </p>
           </div>
@@ -80,7 +84,7 @@ export default function How() {
               href="/kontakt"
               className="btn-primary mx-auto align-middle h-14"
             >
-              chci sjednat schůzku
+              Chci sjednat schůzku
             </Link>
           </div>
           {/* question - end */}

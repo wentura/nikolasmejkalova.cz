@@ -38,17 +38,18 @@ export default function Sluzby() {
               </p>
               <p className="mb-6 text-gray-500 sm:text-xl md:mb-8">
                 Za dobu své praxe, jsem se setkala již s mnoha případy, které
-                jsme zvládli vyřešit. Nejčastěji např. potravinové alergie,
-                ekzémy, menstruační problémy, nemožnost otěhotnět, migrény,
-                ztráta sluchu, různé druhy nevolností a bolestí, paniky,
-                úzkosti, strachy, stresové situace, aj.
+                jsme zvládli vyřešit. Nejčastěji potravinové alergie, ekzémy,
+                menstruační problémy, nemožnost otěhotnět, migrény, ztráta
+                sluchu, různé druhy nevolností a bolestí, paniky, úzkosti,
+                strachy, stresové situace a mnohé další.
               </p>
               <p className="text-center pt-12">
                 <a
                   href="/metoda"
                   className="text-gray-500 text-xl py-4 px-8 text-center border-4 border-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:border-amber-500"
                 >
-                  věnuji se <span className="font-bold">PSYCH-K</span>
+                  věnuji se <span className="font-bold">PSYCH-K</span>, chcete
+                  vědět víc?
                 </a>
               </p>
             </div>

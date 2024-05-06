@@ -28,10 +28,10 @@ export default function Content() {
               problém.
               <br />
               <br />V dětském věku to bývá nejčastěji alergie, astma, ekzém, a
-              hlavně také spousta ,,programů,, - nejsem dost dobrý, nezasloužím
-              si, nemůžu, nedovoluji si, nejde to, nemám na to, aj. Později nás
-              tyto programy a emoce ovládají, je to něco jako nahraný program v
-              PC, který se při startu spustí a prostě jede.
+              hlavně také spousta &ldquo;programů&rdquo; - nejsem dost dobrý,
+              nezasloužím si, nemůžu, nedovoluji si, nejde to, nemám na to, aj.
+              Později nás tyto programy a emoce ovládají, je to něco jako
+              nahraný program v PC, který se při startu spustí a prostě jede.
             </p>
 
             <blockquote className="text-3xl text-gray-600 md:text-6xl md:mb-3 italic text-center Heading">
