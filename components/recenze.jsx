@@ -6,7 +6,7 @@ export default function Recenze({ lp }) {
   return (
     <div className="mx-auto max-w-screen-2xl px-4 md:px-8 py-6 sm:py-8 lg:py-12 mt-24 text-gray-500">
       <h3 className="mb-2 text-left text-xl font-bold text-gray-600 sm:text-2xl md:mb-3">
-        Řekli o mě...
+        Řekli o mně...
       </h3>
       <div className="flex flex-wrap">
         {/* quote - start */}
