@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import SjednatSchuzku from "./sjednatSchuzku";
 
 export default function How() {
   return (
@@ -80,12 +81,7 @@ export default function How() {
 
           {/* question - start */}
           <div className="mt-7 flex">
-            <Link
-              href="/kontakt"
-              className="btn-primary mx-auto align-middle h-14"
-            >
-              Chci sjednat schůzku
-            </Link>
+            <SjednatSchuzku klass="mx-auto" />
           </div>
           {/* question - end */}
         </div>

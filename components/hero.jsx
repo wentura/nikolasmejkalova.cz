@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SjednatSchuzku from "./sjednatSchuzku";
 export default function Hero() {
   return (
     <div className="mx-auto w-full bg-yellow-600 bg-opacity-10">
@@ -25,9 +26,7 @@ export default function Hero() {
               facilitátorka metody PSYCH-K®
             </p>
             <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-end">
-              <Link href="/kontakt" className="btn-primary">
-                chci si sjednat schůzku
-              </Link>
+              <SjednatSchuzku klass="mx-right-0" />
             </div>
           </div>
           {/* content - end */}
