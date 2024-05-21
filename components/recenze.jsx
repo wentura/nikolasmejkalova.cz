@@ -48,7 +48,7 @@ export default function Recenze({ lp }) {
                   href="/recenze"
                   className="text-gray-500 text-xl py-4 px-8 text-center border-4 border-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:border-amber-500"
                 >
-                  více ohlasů mých klientů
+                  ... a další říkají
                 </a>
               </p>
             </div>

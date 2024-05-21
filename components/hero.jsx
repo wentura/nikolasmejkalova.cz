@@ -25,7 +25,7 @@ export default function Hero() {
             <p className="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 text-lg xl:text-2xl relative xl:-top-12">
               facilitátorka metody PSYCH-K®
             </p>
-            <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-center lg:justify-end">
+            <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-left ">
               <SjednatSchuzku klass="mx-right-0" />
             </div>
           </div>
