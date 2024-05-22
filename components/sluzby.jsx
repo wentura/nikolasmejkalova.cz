@@ -46,7 +46,7 @@ export default function Sluzby() {
               <p className="text-center pt-12">
                 <a
                   href="/metoda"
-                  className="text-gray-500 text-xl py-4 px-8 text-center border-4 border-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:border-amber-500"
+                  className="text-gray-500 text-md lg:text-xl lg:py-4 lg:px-8 text-center underline underline-offset-4 decoration-amber-400 decoration-4 lg:no-underline lg:border-4 border-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:border-amber-500"
                 >
                   věnuji se <span className="font-bold">PSYCH-K</span>, chcete
                   vědět víc?
