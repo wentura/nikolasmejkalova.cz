@@ -1,5 +1,13 @@
 export const recenze = [
   {
+    name: "Háňa",
+    text: "<p class='pb-2'><strong class='text-xl'>Já bych touto recenzí chtěla Nikole poděkovat. Díky jejímu laskavému vedení, dostává můj svět nový rozměr.</strong><p>Učí mě milovat samu sebe, vážit si svého těla a důvěřovat mu. Každé sezení s Nikolou, je balzámem pro mou duši a lékem pro mé tělo. </p>",
+  },
+  {
+    name: "Honza",
+    text: "<p class='pb-2'><strong class='text-xl'>Setkání s Nikčou bylo pro mě velké neznámo. Od první chvíle jsem ale cítil, že tady jsem na správném místě.</strong><p>Konečně se mé pocity a vnitřní strachy mohly poprat mezi sebou a pak společně odejít. Její pochopení a důvěra ve vás je natolik příjemná, že nakonec nechcete vy sami odejít.</p><p>Na závěr píši, velké děkuji a bojuji!</p>",
+  },
+  {
     name: "Ludmila",
     text: "<p class='pb-2'><strong class='text-xl'>Nikola a její terapie mě vrátily zpět do života!</strong> Čtyři roky potíží se zažíváním, kdy lékaři přes nespočet testů a vyšetření stále opakovali že jsem zdravá a já přitom nemohla konzumovat lepek, laktózu, sóju a nespočet dalších potravin. I před nekonzumaci oněch potravin jsem stále měla potíže, které mě pomalu připravovaly o veškeré radosti v životě jako cestování, pracovní flexibilita, jídlo mimo domov, posezení s přáteli apod.</p><p class='pb-2'>Tyto problémy zmizely jako mávnutím proutku poté, co jsem potkala Nikolu a začala docházet na terapie. Již po prvním sezení se většina potíží ztratila. A jak to bývá, vyřešíte-li jeden problém, najdou se další, mnoho let upozaděné, ale i s těmi mi dokázala pomoci. Věci malicherné ale obtěžující, věci dlouhodobé, z dětství atd. S tím vším mi pomohla a já nyní mohu prohlásit, po necelém roce spolupráce, že opět žiji naplno a mohu dělat to, co mě těší.</p><p>Nikola má úžasný přístup, je přátelská, chápavá a obětavá. Pomohla mi v mé nejtěžší hodině a vrátila mě zpět do plnohodnotného života a za to ji budu navždy vděčná!</p>",
   },

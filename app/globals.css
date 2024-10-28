@@ -20,3 +20,32 @@
   width: 100%;
   height: 100%;
 }
+
+@layer components {
+  @font-face {
+    font-family: "playfair";
+    src: url("/playfair.woff2") format("woff2");
+    /* src: url("/noto.woff") format("woff"); */
+    /* src: url("/noto.ttf") format("truetype"); */
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "montserrat";
+    src: url("/montserrat.woff2") format("woff2");
+    /* src: url("/montserrat.woff") format("woff"); */
+    /* src: url("/montserrat.ttf") format("truetype"); */
+    font-display: swap;
+  }
+  .play {
+    font-family: "playfair" !important;
+  }
+  .mont {
+    font-family: "montserrat" !important;
+  }
+  .zvyraznenyText {
+    @apply text-gray-600;
+  }
+  .nadpis {
+    font-weight: 400 !important;
+  }
+}

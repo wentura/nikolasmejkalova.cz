@@ -19,10 +19,11 @@ export default function Hero() {
                 alt="logo metody Psych-K"
               />
             </div>
-            <h1 className="mb-0 text-4xl font-extralight md:text-6xl lg:text-8xl font-heading relative xl:-top-24">
-              Nikola Smejkalová
+            {/* <h1 className="mb-0 text-4xl font-extralight md:text-6xl lg:text-8xl font-heading relative xl:-top-24"> */}
+            <h1 className="mb-0 text-4xl font-extralight md:text-6xl lg:text-8xl play relative xl:-top-24 zvyraznenyText nadpis">
+              Vítejte na cestě k vnitřnímu klidu a lepšímu životu
             </h1>
-            <p className="mb-8 leading-relaxed text-gray-500 md:mb-12 lg:w-4/5 text-lg xl:text-2xl relative xl:-top-12">
+            <p className="mb-8 leading-relaxed text-gray-800 md:mb-12 lg:w-4/5 text-lg xl:text-2xl relative xl:-top-12">
               facilitátorka metody PSYCH-K®
             </p>
             <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-left ">

@@ -15,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning={true}>
-      <body>
+      <body className="mont font-base">
         <main className="main">{children}</main>
       </body>
     </html>
