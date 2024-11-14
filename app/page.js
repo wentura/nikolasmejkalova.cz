@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import Heading from "@/components/heading";
 import Hero from "@/components/hero";
 import How from "@/components/how";
+import Info from "@/components/informace.jsx";
 import Menu from "@/components/menu";
 import Recenze from "@/components/recenze";
 import Sluzby from "@/components/sluzby";
@@ -27,7 +28,8 @@ export default function Home() {
       /> */}
       <How />
       <Heading title="Odpovědí jsi ty sám" text="" klass="font-heading" />
-      <Content />
+      {/* <Content /> */}
+      <Info />
       <Heading title="Vše souvisí se vším." text="" klass="font-heading" />
       <Recenze lp="true" />
       <Contact />

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Contact() {
@@ -8,17 +9,19 @@ export default function Contact() {
         <div className="flex flex-col items-center gap-4 md:gap-6">
           <a
             href="/"
-            className="inline-flex items-center gap-2.5 text-3xl font-bold text-black md:text-5xl"
+            className="inline-flex items-center gap-2.5 text-3xl play md:text-5xl lg:text-6xl zvyraznenyText nadpis"
             aria-label="logo"
           >
             Nikola Smejkalová
           </a>
           <div className="max-w-md text-center text-gray-600 lg:text-lg">
-            facilitátorka metody PSYCH-K®
+            jsem vaše průvodkyně k osobnímu rozvoji
           </div>
           <div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
             <div className="h-24 w-24 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-56 md:w-56">
-              <img
+              <Image
+                width={300}
+                height={300}
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
                 loading="lazy"
                 alt="Nikola Smejkalová, Vaše facilitátorka metody Psych-K"

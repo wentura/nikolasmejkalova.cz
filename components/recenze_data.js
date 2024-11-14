@@ -2,10 +2,17 @@ export const recenze = [
   {
     name: "Háňa",
     text: "<p class='pb-2'><strong class='text-xl'>Já bych touto recenzí chtěla Nikole poděkovat. Díky jejímu laskavému vedení, dostává můj svět nový rozměr.</strong><p>Učí mě milovat samu sebe, vážit si svého těla a důvěřovat mu. Každé sezení s Nikolou, je balzámem pro mou duši a lékem pro mé tělo. </p>",
+    landing: true,
   },
   {
     name: "Honza",
     text: "<p class='pb-2'><strong class='text-xl'>Setkání s Nikčou bylo pro mě velké neznámo. Od první chvíle jsem ale cítil, že tady jsem na správném místě.</strong><p>Konečně se mé pocity a vnitřní strachy mohly poprat mezi sebou a pak společně odejít. Její pochopení a důvěra ve vás je natolik příjemná, že nakonec nechcete vy sami odejít.</p><p>Na závěr píši, velké děkuji a bojuji!</p>",
+    landing: true,
+  },
+  {
+    name: "Hanka",
+    text: "<p class='pb-2'><strong class='text-xl'>Spolupráce s Vámi mi otevřela nové obzory, jak si můžu tvořit svoji realitu.</strong></p><p class='pb-2'>Uvědomila jsem si, co mě omezuje, kde mám mezující přesvědčení a postupně je měním.</p><p class='pb-2'>Psych-K mi pomohla s migrenami, které už nemám, nesnášenlivostí laktozy, záněty močového měchýře, nestresovat se s termíny a prací.</p><p class='pb-2'>U situací, které se mi nepodařily ještě stoprocentně zvládnout, si alespoň uvědomuji souvislosti a snažím se najít, proč se mi to pořád děje, ale netlačit na sebe. Prostě být vědomější.</p>",
+    landing: true,
   },
   {
     name: "Ludmila",
@@ -29,10 +36,7 @@ export const recenze = [
     text: "<p>Nikča mi pomohla s <strong>bolesti hlavy</strong>, v těhotenství jsem měla bolesti trpela velmi často a to co dokázala je neuvěřitelné,slova díky nestačí !! neskutečná vděčnost za to co děláš.</p>",
     id: 1,
   },
-  {
-    name: "Hanka",
-    text: "<p class='pb-2'>Spolupráce s Vámi mi otevřela nové obzory, jak si můžu tvořit svoji realitu.</p><p class='pb-2'>Uvědomila jsem si, co mě omezuje, kde mám mezující přesvědčení a postupně je měním.</p><p class='pb-2'><strong>Psych-K mi pomohla s migrenami, které už nemám, nesnášenlivostí laktozy, záněty močového měchýře, nestresovat se s termíny a prací.</strong></p><p class='pb-2'>U situací, které se mi nepodařily ještě stoprocentně zvládnout, si alespoň uvědomuji souvislosti a snažím se najít, proč se mi to pořád děje, ale netlačit na sebe. Prostě být vědomější.</p>",
-  },
+
   {
     name: "Simona",
     text: "<p class='pb-2'>K paní Nikol jsem se dostala přes svoji kamarádku. Pracuji na sobě už několik let a už jsem i vystřídala nespočet terapeutů. Vždy to mělo smysl a i s paní Nikol to má velký smysl. Spolu jsme v kontaktu cca 3 měsíce a i za ty tři měsíce jsou vidět výsledky, které dříve byly vidět až třeba za půl roku či déle. Jsem moc ráda, že se moje cesta zkřížila  s její a jsem zvědavá kam se to pohne dál. Moc děkuji.</p>",

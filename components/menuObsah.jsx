@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { menuData } from "./menuData";
@@ -12,12 +13,21 @@ export default function Menu() {
           className="gap-2.5 text-3xl  md:text-5xl leading-6 flex items-center font-heading  font-extralight lg:text-8xl font-heading"
           aria-label="logo"
         >
-          <img
+          {/* <Image
+            width={800}
+            height={100}
             src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
             className="sepia opacity-70 w-10 md:w-16"
             alt="logo metody Psych-K"
           />
-          Nikola Smejkalová
+          Nikola Smejkalová */}
+          <Image
+            src="/podpis.png"
+            width={600}
+            height={100}
+            alt="Nikola Smejkalová"
+            className="self-center w-full h-20 md:h-32"
+          />
         </Link>
         {/* logo - end */}
 

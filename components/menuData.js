@@ -1,12 +1,12 @@
 export const menuData = [
-  {
-    link: "terapie",
-    title: "terapie",
-  },
-  {
-    link: "metoda",
-    title: "metoda",
-  },
+  // {
+  //   link: "terapie",
+  //   title: "terapie",
+  // },
+  // {
+  //   link: "metoda",
+  //   title: "metoda",
+  // },
   {
     link: "recenze",
     title: "recenze",

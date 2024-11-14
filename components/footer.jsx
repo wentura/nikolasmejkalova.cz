@@ -15,22 +15,10 @@ export default function Footer() {
             Nikola Smejkalová
           </Link>
           <Link
-            href="/terapie"
-            className="text-gray-500 transition duration-100 hover:text-yellow-600"
-          >
-            terapie
-          </Link>
-          <Link
-            href="/metoda"
-            className="text-gray-500 transition duration-100 hover:text-yellow-600"
-          >
-            metoda
-          </Link>
-          <Link
             href="recenze"
             className="text-gray-500 transition duration-100 hover:text-yellow-600"
           >
-            recenzez
+            recenze
           </Link>
           {/* <Link
             href="/blog"
@@ -133,7 +121,7 @@ export default function Footer() {
           Zbyněk Svoboda
         </a>
       </div>
-      <Matomo />
+      {/* <Matomo /> */}
     </div>
   );
 }
