@@ -13,7 +13,7 @@ export default function Hero() {
                 width={800}
                 height={400}
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
-                className="sepia opacity-70 md:hidden absolute -top-12 w-12"
+                className="sepia opacity-70 md:hidden absolute -top-16 w-8"
                 alt="logo metody Psych-K"
               />
               <Image
@@ -24,7 +24,7 @@ export default function Hero() {
                 alt="logo metody Psych-K"
               />
             </div>
-            <h1 className="mb-0 text-4xl md:text-6xl lg:text-8xl play relative zvyraznenyText nadpis hidden md:flex">
+            <h1 className="mb-0 text-4xl md:text-6xl lg:text-8xl play relative zvyraznenyText nadpis flex text-left pm-8">
               Cesta k vnitřnímu klidu a lepšímu životu
             </h1>
             <Image
@@ -32,7 +32,7 @@ export default function Hero() {
               width={600}
               height={200}
               alt="Nikola Smejkalová"
-              className="self-center lg:self-end lg:mb-4 lg:-rotate-12 lg:-top-16 xl:-top-12 lg:relative"
+              className="self-center lg:self-end lg:mb-4 -rotate-12 lg:-top-16 xl:-top-12 lg:relative "
             />
             {/* <p className="mb-8 md:mb-12 lg:w-4/5 text-xl lg:text-2xl relative">
               jsem vaše průvodkyně k osobnímu rozvoji

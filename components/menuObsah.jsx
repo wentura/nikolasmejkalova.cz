@@ -26,7 +26,7 @@ export default function Menu() {
             width={600}
             height={100}
             alt="Nikola Smejkalová"
-            className="self-center w-full h-20 md:h-32"
+            className="self-center md:max-h-24 md:w-full"
           />
         </Link>
         {/* logo - end */}

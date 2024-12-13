@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { menuData } from "./menuData";
@@ -28,7 +29,7 @@ export default function MenuMobilni() {
       <nav
         className={`${
           isOpen ? "block" : "hidden"
-        }  top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-20 flex flex-col text-gray-900 shadow-md opacity-90 w-full h-screen fixed`}
+        }  top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-20 flex flex-col text-gray-900 shadow-md opacity-95 w-full h-screen fixed`}
       >
         <button className="flex justify-end p-4" onClick={toggleMenu}>
           <svg
@@ -48,12 +49,15 @@ export default function MenuMobilni() {
         </button>
         <ul className="flex flex-col gap-y-2 w-full items-center text-xl my-2">
           <li className="flex px-8 py-4" key="home">
-            <Link
-              href="/"
-              className=" text-gray-600 transition duration-100 hover:text-yellow-600 font-heading text-4xl font-extralight md:text-6xl lg:text-8xl font-heading"
-            >
-              Nikola Smejkalová
-            </Link>{" "}
+            <Link href="/" onClick={toggleMenu}>
+              <Image
+                src="/podpis.png"
+                width={250}
+                height={100}
+                alt="Nikola Smejkalová"
+                className="self-center"
+              />
+            </Link>
           </li>
           {menuData.map((menu) => {
             return (
