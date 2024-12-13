@@ -3,11 +3,11 @@ import Footer from "@/components/footer";
 import "@/public/style.css";
 import "./globals.css";
 export const metadata = {
-  title: "Nikola Smejkalová, metada psych-k",
+  title: "Cesta k vnitřnímu klidu a lepšímu životu",
   description:
-    "facilitatorka metody psych-k. Pomohu vám zbavit se neprospěšného myšlení a uzdravit i neduhy, se kterými si doktoři nevědí rady. Bez léků a neinvazivně.",
+    "Cesta k vnitřnímu klidu a lepšímu životu. Jsem facilitátorka metody Psych-K. Pomohu vám zbavit se neprospěšného myšlení a uzdravit i neduhy, se kterými si doktoři nevědí rady. Bez léků a neinvazivně.",
   keywords:
-    "psych-k, psychk, metoda psych-k, facilitátorka psych-k, Nikola Smejkalová",
+    "psych-k, psychk, metoda psych-k, facilitátorka psych-k, Nikola Smejkalová, vnitřní klid, lepší život",
   author: "Nikola Smejkalová",
   url: "https://www.nikolasmejkalova.cz/",
 };
