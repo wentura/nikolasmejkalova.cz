@@ -57,10 +57,10 @@ export default function Blog() {
   const { loading, error, data, refetch } = useQuery(GET_NABIDKA);
   const images = [];
   return (
-    <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12">
+    <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12 blog">
       <div className="">
         {error && <p>Error: {error.message}</p>}
-        {loading && <p>Načítám blog...</p>}
+        {loading && <p>Načítám články...</p>}
         {data &&
           data.posts.nodes.map((post) => (
             <div

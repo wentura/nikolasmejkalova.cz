@@ -8,16 +8,17 @@ export const menuData = [
   //   title: "metoda",
   // },
   {
-    link: "recenze",
-    title: "recenze",
+    link: "blog",
+    title: "transformační metody",
   },
   {
-    link: "blog",
-    title: "blog",
+    link: "recenze",
+    title: "řekli o mě",
   },
+
   {
     link: "cenik",
-    title: "ceník",
+    title: "o sezeních",
   },
   {
     link: "kontakt",

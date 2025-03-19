@@ -37,7 +37,7 @@ export default function BlogPost({ params }) {
     );
   const embed = data.post.ytEmbed;
   return (
-    <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12">
+    <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12 blogPost">
       <div className="bg-white py-6 sm:py-8 lg:py-12">
         <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">
           {data.post.title}
