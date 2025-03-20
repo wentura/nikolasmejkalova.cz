@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 
 export default function Matomo() {
@@ -5,7 +6,7 @@ export default function Matomo() {
     <div>
       <img
         referrerPolicy="no-referrer-when-downgrade"
-        src="http://matomo.zbyneksvoboda.cz/matomo.php?idsite=11&amp;rec=1"
+        src="https://matomo.zbyneksvoboda.cz/matomo.php?idsite=11&amp;rec=1"
         className="border-0"
         alt="matomo analytics"
       />
