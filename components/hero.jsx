@@ -46,9 +46,10 @@ export default function Hero() {
           {/* image - start */}
           <div className="h-auto w-72 md:w-full md:max-w-lg mx-auto overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:h-auto xl:w-full mt-8">
             <Image
-              width={800}
-              height={600}
-              src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
+              width={1000}
+              height={700}
+              //   src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
+              src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1742743890/nikolasmejkalova_cz/ja.webp"
               loading="lazy"
               alt="Nikola Smejkalova, Vaše facilitátorka metody Psych-K"
               className="h-full w-full object-cover object-center"
