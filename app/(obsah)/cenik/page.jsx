@@ -9,12 +9,14 @@ export default function Cenik() {
           Ceny tarapeutických sezení
         </h2>
 
-        <div className="grid mb-6 gap-x-6 gap-y-12 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 lg:gap-x-8">
+        {/* <div className="grid mb-6 gap-x-6 gap-y-12 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 lg:gap-x-8"> */}
+        <div className="grid mb-6 gap-x-6 gap-y-12 sm:grid-cols-1 md:mb-8 lg:grid-cols-1 lg:gap-x-8">
           {/* plan - start */}
           <div className="flex flex-col space-y-4">
             <div className="flex flex-col gap-4 p-4 pt-6 border rounded-lg">
               <h3 className="text-2xl font-semibold text-center text-gray-800">
-                Jedno sezení
+                {/* Jedno sezení */}
+                Jedno terapeutické sezení, které trvá 60 - 75 minut
               </h3>
 
               <div className="flex items-end justify-center gap-1">
@@ -27,7 +29,7 @@ export default function Cenik() {
           {/* plan - end */}
 
           {/* plan - start */}
-          <div className="flex flex-col space-y-4">
+          {/* <div className="flex flex-col space-y-4">
             <div className="relative flex flex-col gap-4 p-4 pt-6 border border-yellow-600 rounded-lg">
               <div className="absolute inset-x-0 flex justify-center -top-3">
                 <span className="flex items-center justify-center h-6 px-3 py-1 text-xs font-semibold tracking-widest text-white uppercase bg-yellow-600 rounded-full">
@@ -49,10 +51,10 @@ export default function Cenik() {
                 zvýhodněná cena 1800 Kč za sezení
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* plan - start */}
-          <div className="flex flex-col space-y-4">
+          {/* <div className="flex flex-col space-y-4">
             <div className="flex flex-col gap-4 p-4 pt-6 border rounded-lg">
               <h3 className="text-2xl font-semibold text-center text-gray-800">
                 Pět sezení
@@ -68,7 +70,7 @@ export default function Cenik() {
                 zvýhodněná cena 1550 Kč za sezení
               </div>
             </div>
-          </div>
+          </div> */}
           {/* plan - end */}
         </div>
       </div>
