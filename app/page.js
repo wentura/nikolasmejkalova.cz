@@ -30,8 +30,13 @@ export default function Home() {
       <How />
       <Heading title="Odpovědí jsi ty sám" text="" klass="font-heading" />
       {/* <Content /> */}
-      <Info />
       <Spravne />
+      <Heading
+        title="Potkáváme se i na dálku, on-line."
+        text=""
+        klass="font-heading max-w-[20ch] md:max-w-full mx-auto"
+      />
+      <Info />
       <Heading title="Vše souvisí se vším." text="" klass="font-heading" />
       <Recenze lp="true" />
       <Contact />

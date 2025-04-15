@@ -6,34 +6,19 @@ export default function Info() {
         <h2 className="my-4 text-4xl text-center md:text-left md:text-6xl play relative zvyraznenyText nadpis mb-6 md:mb-8">
           O sezeních
         </h2>
-        <div className="grid gap-4 sm:grid-cols-1 md:gap-12 xl:grid-cols-2 xl:gap-16">
-          <div className="text-gray-500">
-            <h3 className="xl:mb-4 text-lg font-semibold text-gray-700 md:text-xl">
-              60-90 minut
-            </h3>
-            {/* <p className="text-gray-500"></p> */}
-            {/* <ul className="list-none">
-              <li>Délka sezení: 60-90 minut</li>
-              <li>Přístup: Individuální, přizpůsobený vašim potřebám</li>
-              <li>Metoda: Efektivní a zaměřená na rychlé dosažení výsledků</li>
-            </ul> */}
-          </div>
-          <div className="text-gray-500">
-            <h3 className="xl:mb-4 text-lg font-semibold text-gray-700 md:text-xl">
-              Zahrnuje:
-            </h3>
-            <ul>
-              <li>individuální přístup a přípravu na sezení</li>
-              <li>práci s efektivními transformačními metodami</li>
-              <li>
+        <div className="grid gap-4 sm:grid-cols-1 md:gap-12 xl:grid-cols-3 xl:gap-16">
+          <div className="text-gray-500 col-span-2">
+            <ul className="list-disc list-outside p-8">
+              <li className="font-bold">60-90 minut</li>
+              <li className="">individuální přístup a přípravu na sezení</li>
+              <li className="">práci s efektivními transformačními metodami</li>
+              <li className="">
                 prostor pro změnu, která začíná hned – ne až po měsících terapie
               </li>
               <li>podporu na vaší cestě k vědomému, naplněnému životu</li>
             </ul>
           </div>
-        </div>
-        <div className="text-gray-500 mt-8 md:mt-12 grid gap-4 sm:grid-cols-1 md:gap-12 xl:grid-cols-2 xl:gap-16">
-          <p>
+          <p className="text-gray-500">
             <strong className="font-bold">
               Moje práce není jen o „povídání si“
             </strong>{" "}
@@ -42,7 +27,9 @@ export default function Info() {
             uvolňujeme bloky, které vám brání žít to, co chcete. brání žít to,
             co chcete.
           </p>
-          <p>
+        </div>
+        <div className="text-gray-500 mt-8 md:mt-12 grid gap-4 sm:grid-cols-1 md:gap-12 xl:grid-cols-3 xl:gap-16">
+          <p className="block md:hidden">
             Každé{" "}
             <strong className="font-bold">
               90minutové sezení je vedené individuálně
@@ -62,6 +49,14 @@ export default function Info() {
             práce na sobě zůstává naprosto stejný. Můžeme spolu pracovat na
             vašem osobním rozvoji bez rozdílu – obě varianty přinášejí podporu a
             skutečnou transformaci.
+          </p>{" "}
+          <p className="hidden md:block">
+            Každé{" "}
+            <strong className="font-bold">
+              90minutové sezení je vedené individuálně
+            </strong>{" "}
+            a přizpůsobené tomu, kde se právě nacházíte. Získáte konkrétní
+            prožitek změny a zároveň tipy, jak ji podpořit.
           </p>
         </div>
         {/* <div className="my-10 md:my-24 text-center sm:text-left">

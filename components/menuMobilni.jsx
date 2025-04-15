@@ -10,7 +10,7 @@ export default function MenuMobilni() {
   }
   return (
     <div className="mobilniMenu">
-      <button className="flex justify-end p-4 lg:hidden" onClick={toggleMenu}>
+      <button className="flex justify-end p-2 lg:hidden" onClick={toggleMenu}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

@@ -8,7 +8,7 @@ export default function Sluzby() {
     <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12">
       {/* text - start */}
       <div className="bg-white py-6 sm:py-8 lg:py-12">
-        <div className="mx-auto max-w-screen-xl px-4 md:px-8">
+        <div className="mx-auto max-w-screen-xl px-0 md:px-8">
           <div className="grid gap-8 md:grid-cols-2 lg:gap-12">
             <div className="h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-[600px]">
               <Image

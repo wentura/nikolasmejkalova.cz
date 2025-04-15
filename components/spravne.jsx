@@ -21,7 +21,7 @@ export default function Spravne() {
             );
           })}
         </div>
-        <h2 className="my-12 md:my-24 text-2xl text-center md:text-left md:text-4xl play relative zvyraznenyText nadpis mb-2 md:mb-4">
+        <h2 className="my-24 md:my-44 text-2xl text-center md:text-left md:text-4xl play relative zvyraznenyText nadpis mb-2 md:mb-4">
           Možná to není pro tebe, pokud:
         </h2>
         <div className="grid gap-4 sm:grid-cols-1 md:gap-8 xl:grid-cols-3 xl:gap-8">

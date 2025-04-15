@@ -5,8 +5,8 @@ import MenuMobilni from "./menuMobilni";
 export default function Menu() {
   return (
     <div className="mx-auto w-full bg-yellow-600 bg-opacity-10">
-      <div className="px-4 mx-auto max-w-screen-2xl  flex items-center justify-end py-4 md:py-6 xl:py-8">
-        <nav className="gap-12 justify-end w-full lg:w-auto z-10 hidden lg:flex">
+      <div className="px-0 md:px-4 mx-auto max-w-screen-2xl  flex items-center justify-end py-0 md:py-6 xl:py-8">
+        <nav className="gap-4 md:gap-12 justify-end w-full lg:w-auto z-10 hidden lg:flex">
           {menuData.map((menu) => {
             return (
               <Link

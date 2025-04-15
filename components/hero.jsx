@@ -9,7 +9,7 @@ export default function Hero() {
           {/* content - start */}
           <div className="flex flex-col text-center lg:py-12 lg:text-left xl:w-6/12 xl:py-4">
             <div className="relative">
-              <Image
+              {/* <Image
                 width={800}
                 height={400}
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
@@ -22,9 +22,9 @@ export default function Hero() {
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1709719256/nikolasmejkalova_cz/logo-psych-k2_ylumqs.png"
                 className="sepia opacity-70 md:-top-12 md:w-2/5 lg:w-2/5 xl:w-1/4 hidden md:flex relative lg:-top-20 xl:-top-20 lg:left-4"
                 alt="logo metody Psych-K"
-              />
+              /> */}
             </div>
-            <h1 className="mb-0 text-4xl md:text-6xl lg:text-8xl play relative zvyraznenyText nadpis flex text-left pm-8">
+            <h1 className="mb-0 text-4xl md:text-6xl lg:text-8xl play relative zvyraznenyText nadpis flex text-left pm-8 mt-4 md:mt-20">
               Cesta k vnitřnímu klidu a lepšímu životu
             </h1>
             <Image
@@ -38,7 +38,10 @@ export default function Hero() {
               jsem vaše průvodkyně k osobnímu rozvoji
             </p> */}
             <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-left ">
-              <SjednatSchuzku klass="mx-right-0" />
+              <SjednatSchuzku
+                klass="mx-right-0"
+                text="Chci udělat první krok"
+              />
             </div>
           </div>
           {/* content - end */}

@@ -16,7 +16,7 @@ export default function How() {
           {howData.map((how, index) => {
             return (
               <div key={index}>
-                <h3 className="xl:mb-4 text-lg font-semibold text-gray-700 md:text-xl">
+                <h3 className="xl:mb-4 text-lg font-semibold text-gray-700">
                   {how.title}
                 </h3>
                 <p className="text-gray-500">{how.text}</p>
