@@ -24,8 +24,7 @@ export default function Info() {
             </strong>{" "}
             – už na prvním sezení se věnujeme skutečné transformaci. Společně
             pracujeme s podvědomými vzorci, měníme limitující přesvědčení a
-            uvolňujeme bloky, které vám brání žít to, co chcete. brání žít to,
-            co chcete.
+            uvolňujeme bloky, které vám brání žít to, co chcete.
           </p>
         </div>
         <div className="text-gray-500 mt-8 md:mt-12 grid gap-4 sm:grid-cols-1 md:gap-12 xl:grid-cols-3 xl:gap-16">
