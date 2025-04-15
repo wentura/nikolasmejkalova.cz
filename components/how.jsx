@@ -10,7 +10,7 @@ export default function How() {
 
         {/* text - end */}
         <h2 className="my-4 text-4xl text-center md:text-left md:text-6xl play relative zvyraznenyText nadpis mb-6 md:mb-8">
-          Spoluprací se mnou získáte
+          Jaké změny můžete očekávat při naší spolupráci:
         </h2>
         <div className="grid gap-4 sm:grid-cols-1 md:gap-12 xl:grid-cols-3 xl:gap-16">
           {howData.map((how, index) => {
@@ -26,7 +26,10 @@ export default function How() {
         </div>
         <div className="my-10 md:my-24 text-center sm:text-left">
           <div className="mt-7 flex">
-            <SjednatSchuzku klass="mx-auto" />
+            <SjednatSchuzku
+              klass="mx-auto"
+              text="Ano, jsem připraven na změnu"
+            />
           </div>
           <h2 className="mt-8 text-center text-xl font-bold text-gray-800 md:mb-6 lg:text-2xl">
             Lze pracovat online.

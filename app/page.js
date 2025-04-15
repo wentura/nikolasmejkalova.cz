@@ -4,10 +4,11 @@ import Footer from "@/components/footer";
 import Heading from "@/components/heading";
 import Hero from "@/components/hero";
 import How from "@/components/how";
-import Info from "@/components/informace.jsx";
+import Info from "@/components/informace";
 import Menu from "@/components/menu";
 import Recenze from "@/components/recenze";
 import Sluzby from "@/components/sluzby";
+import Spravne from "@/components/spravne";
 import "./globals.css";
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
       <Heading title="Odpovědí jsi ty sám" text="" klass="font-heading" />
       {/* <Content /> */}
       <Info />
+      <Spravne />
       <Heading title="Vše souvisí se vším." text="" klass="font-heading" />
       <Recenze lp="true" />
       <Contact />

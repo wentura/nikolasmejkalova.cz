@@ -1,7 +1,7 @@
 export const howData = [
   {
     title: "Méně stresu, více klidu",
-    text: "Osvojíte si techniky pro zvládání každodenních výzev s lehkostí.",
+    text: "Vaše naučené negativní vzorce již nebudou tak aktivní.",
   },
   {
     title: "Posílené sebevědomí",
@@ -9,7 +9,7 @@ export const howData = [
   },
   {
     title: "Lepší zdraví",
-    text: "Zbavíte se fyzických projevů psychického napětí a pocítíte celkové zlepšení zdraví.",
+    text: "Zmírníte fyzické projevy psychického napětí a pocítíte celkové zlepšení zdraví.",
   },
   {
     title: "Harmonické vztahy",

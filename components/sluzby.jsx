@@ -22,21 +22,27 @@ export default function Sluzby() {
             </div>
             <div className="md:pt-8">
               {/* <h2 className="mt-8 md:mt-0 text-center text-5xl md:text-6xl mb-2 text-gray-600 Heading"> */}
-              <p className="">Jsem vaše průvodkyně k osobnímu rozvoji.</p>
-              {/* <h2 className="mt-8 md:mt-0 mb-4 text-2xl text-gray-800 md:mb-6 lg:text-4xl play"> */}
-              <h2 className="my-4 text-3xl md:text-3xl lg:text-4xl play relative zvyraznenyText nadpis mb-6 md:mb-8">
-                Jsem Nikola Smejkalová.
+              <h2 className="my-4 text-3xl md:text-3xl lg:text-4xl play relative zvyraznenyText nadpis mb-1 md:mb-1">
+                Jsem Nikola Smejkalová
               </h2>
-              <p className="mb-2 md:mb-4">
-                Jsem tady, abych vám pomohla překonat psychické bloky a
-                dosáhnout skutečné životní pohody. Moje metody jsou efektivní,
-                rychlé a přizpůsobené přímo vám.
+              <p className="mb-4 md:mb-8">
+                {/* <h2 className="mt-8 md:mt-0 mb-4 text-2xl text-gray-800 md:mb-6 lg:text-4xl play"> */}
+                vaše průvodkyně osobním rozvojem a nevědomím. .
               </p>
               <p className="mb-2 md:mb-4">
-                Společně identifikujeme neprospěšné vzorce ve vašem myšlení a
-                chování. Poté je přeměníme na nové, které vám umožní žít naplno
-                a s radostí. Mým cílem je, abyste po každém sezení odcházeli s
-                konkrétními nástroji pro pozitivní změnu.
+                Společně odhalíme a transformujeme omezující vzorce myšlení a
+                chování, které vám brání žít život podle vašich představ. Moje
+                metody jsou efektivní, prověřené a přizpůsobené vašim
+                individuálním potřebám.
+              </p>
+              <p className="mb-2 md:mb-4">
+                Poskytnu vám nástroje, podporu a bezpečné prostředí, k vaší
+                osobní transformaci.
+              </p>
+              <p className="mb-2 md:mb-4">
+                Jste připraveni převzít odpovědnost za svůj život a aktivně
+                pracovat na své změně? Protože za odpovědností se skrývá vaše
+                svoboda.
               </p>
               {/* <p className="mb-6 md:mb-8">
                 Za dobu své praxe, jsem se setkala již s mnoha případy, které
@@ -46,7 +52,10 @@ export default function Sluzby() {
                 strachy, stresové situace a mnohé další.
               </p> */}
               <div className="flex flex-col gap-2.5 sm:flex-row sm:justify-end pt-12">
-                <SjednatSchuzku klass="mx-right-0" />
+                <SjednatSchuzku
+                  klass="mx-right-0"
+                  text="Ano, chci začít svou cestu"
+                />
               </div>
             </div>
           </div>

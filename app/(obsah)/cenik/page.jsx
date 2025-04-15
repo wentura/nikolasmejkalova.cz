@@ -1,4 +1,5 @@
 import How from "@/components/how";
+import Info from "@/components/informace";
 import React from "react";
 
 export default function Cenik() {
@@ -6,7 +7,7 @@ export default function Cenik() {
     <div className="py-6 bg-white sm:py-8 lg:py-12">
       <div className="max-w-screen-xl px-4 mx-auto md:px-8">
         <h2 className="mb-4 text-2xl font-bold text-center text-gray-800 md:mb-8 lg:text-3xl xl:mb-12">
-          Ceny tarapeutických sezení
+          Ceny sezení
         </h2>
 
         {/* <div className="grid mb-6 gap-x-6 gap-y-12 sm:grid-cols-2 md:mb-8 lg:grid-cols-3 lg:gap-x-8"> */}
@@ -16,7 +17,7 @@ export default function Cenik() {
             <div className="flex flex-col gap-4 p-4 pt-6 border rounded-lg">
               <h3 className="text-2xl font-semibold text-center text-gray-800">
                 {/* Jedno sezení */}
-                Jedno terapeutické sezení, které trvá 60 - 75 minut
+                Jedno terapeutické sezení, které trvá 60-90 minut
               </h3>
 
               <div className="flex items-end justify-center gap-1">
@@ -75,6 +76,7 @@ export default function Cenik() {
         </div>
       </div>
       <How />
+      <Info />
     </div>
   );
 }

@@ -1,26 +1,36 @@
 export const recenze = [
   {
+    name: "Monika",
+    text: "<p class='pb-2'><strong class='font-bold'>Děkuji paní Nikol, velice nám pomohla s dcerou která trpěla na atopický ekzém.</strong> Teď již je to minulostí.🙂 a pomohla i mě si upevnit sebevědomí a jít si za svým snem. Děkuji, Monika.</p>",
+    landing: true,
+  },
+  {
+    name: "Kája",
+    text: "<p class='pb-2'>Díky dlouhodobé spolupráci s Nikčou se mi podařilo <strong class='font-bold'>zpracovat důležitá témata mého života a zároveň některá nová rozkrýt, správně je pojmenovat a čelit jim v pravdě.</strong> Nikola je empatická, profesionální a opravdu ví, jak vést k výsledkům. Děkuji! </p>",
+    landing: true,
+  },
+  {
     name: "Háňa",
-    text: "<p class='pb-2'><strong class='text-xl'>Já bych touto recenzí chtěla Nikole poděkovat. Díky jejímu laskavému vedení, dostává můj svět nový rozměr.</strong><p>Učí mě milovat samu sebe, vážit si svého těla a důvěřovat mu. Každé sezení s Nikolou, je balzámem pro mou duši a lékem pro mé tělo. </p>",
+    text: "<p class='pb-2'><strong class='font-bold'>Já bych touto recenzí chtěla Nikole poděkovat. Díky jejímu laskavému vedení, dostává můj svět nový rozměr.</strong><p>Učí mě milovat samu sebe, vážit si svého těla a důvěřovat mu. Každé sezení s Nikolou, je balzámem pro mou duši a lékem pro mé tělo. </p>",
     landing: true,
   },
   {
     name: "Honza",
-    text: "<p class='pb-2'><strong class='text-xl'>Setkání s Nikčou bylo pro mě velké neznámo. Od první chvíle jsem ale cítil, že tady jsem na správném místě.</strong><p>Konečně se mé pocity a vnitřní strachy mohly poprat mezi sebou a pak společně odejít. Její pochopení a důvěra ve vás je natolik příjemná, že nakonec nechcete vy sami odejít.</p><p>Na závěr píši, velké děkuji a bojuji!</p>",
-    landing: true,
+    text: "<p class='pb-2'><strong class='font-bold'>Setkání s Nikčou bylo pro mě velké neznámo. Od první chvíle jsem ale cítil, že tady jsem na správném místě.</strong><p>Konečně se mé pocity a vnitřní strachy mohly poprat mezi sebou a pak společně odejít. Její pochopení a důvěra ve vás je natolik příjemná, že nakonec nechcete vy sami odejít.</p><p>Na závěr píši, velké děkuji a bojuji!</p>",
+    landing: false,
   },
   {
     name: "Hanka",
-    text: "<p class='pb-2'><strong class='text-xl'>Spolupráce s Vámi mi otevřela nové obzory, jak si můžu tvořit svoji realitu.</strong></p><p class='pb-2'>Uvědomila jsem si, co mě omezuje, kde mám mezující přesvědčení a postupně je měním.</p><p class='pb-2'>Psych-K mi pomohla s migrenami, které už nemám, nesnášenlivostí laktozy, záněty močového měchýře, nestresovat se s termíny a prací.</p><p class='pb-2'>U situací, které se mi nepodařily ještě stoprocentně zvládnout, si alespoň uvědomuji souvislosti a snažím se najít, proč se mi to pořád děje, ale netlačit na sebe. Prostě být vědomější.</p>",
-    landing: true,
+    text: "<p class='pb-2'><strong class='font-bold'>Spolupráce s Vámi mi otevřela nové obzory, jak si můžu tvořit svoji realitu.</strong></p><p class='pb-2'>Uvědomila jsem si, co mě omezuje, kde mám mezující přesvědčení a postupně je měním.</p><p class='pb-2'>Psych-K mi pomohla s migrenami, které už nemám, nesnášenlivostí laktozy, záněty močového měchýře, nestresovat se s termíny a prací.</p><p class='pb-2'>U situací, které se mi nepodařily ještě stoprocentně zvládnout, si alespoň uvědomuji souvislosti a snažím se najít, proč se mi to pořád děje, ale netlačit na sebe. Prostě být vědomější.</p>",
+    landing: false,
   },
   {
     name: "Ludmila",
-    text: "<p class='pb-2'><strong class='text-xl'>Nikola a její terapie mě vrátily zpět do života!</strong> Čtyři roky potíží se zažíváním, kdy lékaři přes nespočet testů a vyšetření stále opakovali že jsem zdravá a já přitom nemohla konzumovat lepek, laktózu, sóju a nespočet dalších potravin. I před nekonzumaci oněch potravin jsem stále měla potíže, které mě pomalu připravovaly o veškeré radosti v životě jako cestování, pracovní flexibilita, jídlo mimo domov, posezení s přáteli apod.</p><p class='pb-2'>Tyto problémy zmizely jako mávnutím proutku poté, co jsem potkala Nikolu a začala docházet na terapie. Již po prvním sezení se většina potíží ztratila. A jak to bývá, vyřešíte-li jeden problém, najdou se další, mnoho let upozaděné, ale i s těmi mi dokázala pomoci. Věci malicherné ale obtěžující, věci dlouhodobé, z dětství atd. S tím vším mi pomohla a já nyní mohu prohlásit, po necelém roce spolupráce, že opět žiji naplno a mohu dělat to, co mě těší.</p><p>Nikola má úžasný přístup, je přátelská, chápavá a obětavá. Pomohla mi v mé nejtěžší hodině a vrátila mě zpět do plnohodnotného života a za to ji budu navždy vděčná!</p>",
+    text: "<p class='pb-2'><strong class='font-bold'>Nikola a její terapie mě vrátily zpět do života!</strong> Čtyři roky potíží se zažíváním, kdy lékaři přes nespočet testů a vyšetření stále opakovali že jsem zdravá a já přitom nemohla konzumovat lepek, laktózu, sóju a nespočet dalších potravin. I před nekonzumaci oněch potravin jsem stále měla potíže, které mě pomalu připravovaly o veškeré radosti v životě jako cestování, pracovní flexibilita, jídlo mimo domov, posezení s přáteli apod.</p><p class='pb-2'>Tyto problémy zmizely jako mávnutím proutku poté, co jsem potkala Nikolu a začala docházet na terapie. Již po prvním sezení se většina potíží ztratila. A jak to bývá, vyřešíte-li jeden problém, najdou se další, mnoho let upozaděné, ale i s těmi mi dokázala pomoci. Věci malicherné ale obtěžující, věci dlouhodobé, z dětství atd. S tím vším mi pomohla a já nyní mohu prohlásit, po necelém roce spolupráce, že opět žiji naplno a mohu dělat to, co mě těší.</p><p>Nikola má úžasný přístup, je přátelská, chápavá a obětavá. Pomohla mi v mé nejtěžší hodině a vrátila mě zpět do plnohodnotného života a za to ji budu navždy vděčná!</p>",
   },
   {
     name: "Kristýna",
-    text: "<p class='pb-2'>Setkání s Nikol bylo zajímavé, šla jsem na metodu Psych-K kvůli stresu, strachu, nervozitě a řekla si proč to nezkusit.</p><p class='pb-2'><strong>Nikol mi pomohla najít příčiny, proč tomu tak je a metodou začala postupně problémy odstraňovat.</strong></p><p class='pb-2'>Za pár dnů, týdnu se začali dít věci, že jsem nevěřila vlastním očím. Najednou jsem byla bez problémů. I lidé okolo mě byli jiný kvůli kterým ten strach byl.</p><p class='pb-2'>Dcera měla strach ze školky, furt plakala, toutou metodou vše vyřešeno, za týden ve školce už nikdy neplakala. Mimo metod umí i jiné věci, pobavit a rozesmát, můžete se ní bavit o čemkoliv a umí vždy skvěle poradit. Vždy ze sezení odcházím plná energie a bez tíhy. Jsem moc ráda, že mi pomohla a pomáhá, je úžasná</p>",
+    text: "<p class='pb-2'>Setkání s Nikol bylo zajímavé, šla jsem na metodu Psych-K kvůli stresu, strachu, nervozitě a řekla si proč to nezkusit.</p><p class='pb-2'><strong class='font-bold'>Nikol mi pomohla najít příčiny, proč tomu tak je a metodou začala postupně problémy odstraňovat.</strong></p><p class='pb-2'>Za pár dnů, týdnu se začali dít věci, že jsem nevěřila vlastním očím. Najednou jsem byla bez problémů. I lidé okolo mě byli jiný kvůli kterým ten strach byl.</p><p class='pb-2'>Dcera měla strach ze školky, furt plakala, toutou metodou vše vyřešeno, za týden ve školce už nikdy neplakala. Mimo metod umí i jiné věci, pobavit a rozesmát, můžete se ní bavit o čemkoliv a umí vždy skvěle poradit. Vždy ze sezení odcházím plná energie a bez tíhy. Jsem moc ráda, že mi pomohla a pomáhá, je úžasná</p>",
   },
   {
     name: "Klára",
@@ -28,12 +38,12 @@ export const recenze = [
   },
   {
     name: "Jarda",
-    text: "<p>Dva roky jsem trpěl na hemeroidy a nic nepomáhalo, po balancu u tebe a po splnění akčního kroku přišel okamžitý relax na záchodě a hemeroidy byly do týdne pryč úplně.</p>",
+    text: "<p><strong class='font-bold'>Dva roky jsem trpěl na hemeroidy a nic nepomáhalo, po balancu u tebe a po splnění akčního kroku přišel okamžitý relax na záchodě a hemeroidy byly do týdne pryč úplně.</strong></p>",
     id: 0,
   },
   {
     name: "Jana",
-    text: "<p>Nikča mi pomohla s <strong>bolesti hlavy</strong>, v těhotenství jsem měla bolesti trpela velmi často a to co dokázala je neuvěřitelné,slova díky nestačí !! neskutečná vděčnost za to co děláš.</p>",
+    text: "<p>Nikča mi pomohla s <strong class='font-bold'>bolesti hlavy</strong>, v těhotenství jsem měla bolesti trpela velmi často a to co dokázala je neuvěřitelné,slova díky nestačí !! neskutečná vděčnost za to co děláš.</p>",
     id: 1,
   },
 
