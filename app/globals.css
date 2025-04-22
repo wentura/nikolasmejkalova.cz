@@ -50,3 +50,12 @@
 .blogPost p {
   @apply my-12;
 }
+strong {
+  @apply font-bold;
+}
+ul {
+  @apply list-disc list-outside pl-8;
+}
+ul > li {
+  @apply pl-4;
+}

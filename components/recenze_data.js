@@ -1,10 +1,5 @@
 export const recenze = [
   {
-    name: "Lucka",
-    text: "<p class='pb-2'>Sezení s Nikčou mi otevřelo nové cesty k pochopení sebe a mého života. <strong class='font-bold'>Terapie jemně, ale cíleně vede k vnitřnímu posunu, který se postupně promítá i do každodenního života.</strong></p><p class='pb-2'>Nikol má obrovský dar nacítit se na člověka, vnímat hluboké vrstvy tématu, které právě řeším, a s lehkostí a laskavostí mě provést procesem do velké hloubky.</p>",
-    landing: true,
-  },
-  {
     name: "Běla",
     text: "<p class='pb-2'>Díky práci s Psych-K a stínovými archetypy u Nikoly <strong class='font-bold'>se mi výrazně ulevilo od migrén, které mě trápily od dětství.</strong></p><p class='pb-2'>Zmizela i vyrážka na noze a celkově cítím víc klidu a pohody v životě. Neskutečně silná a léčivá zkušenost.</p>",
     landing: true,
@@ -32,6 +27,11 @@ export const recenze = [
   {
     name: "Hanka",
     text: "<p class='pb-2'><strong class='font-bold'>Spolupráce s Vámi mi otevřela nové obzory, jak si můžu tvořit svoji realitu.</strong></p><p class='pb-2'>Uvědomila jsem si, co mě omezuje, kde mám mezující přesvědčení a postupně je měním.</p><p class='pb-2'>Psych-K mi pomohla s migrenami, které už nemám, nesnášenlivostí laktozy, záněty močového měchýře, nestresovat se s termíny a prací.</p><p class='pb-2'>U situací, které se mi nepodařily ještě stoprocentně zvládnout, si alespoň uvědomuji souvislosti a snažím se najít, proč se mi to pořád děje, ale netlačit na sebe. Prostě být vědomější.</p>",
+    landing: true,
+  },
+  {
+    name: "Lucka",
+    text: "<p class='pb-2'>Sezení s Nikčou mi otevřelo nové cesty k pochopení sebe a mého života. <strong class='font-bold'>Terapie jemně, ale cíleně vede k vnitřnímu posunu, který se postupně promítá i do každodenního života.</strong></p><p class='pb-2'>Nikol má obrovský dar nacítit se na člověka, vnímat hluboké vrstvy tématu, které právě řeším, a s lehkostí a laskavostí mě provést procesem do velké hloubky.</p><p class='pb-2'>Po každém sezení cítím obrovskou úlevu, jako by ze mě někdo sundal velkou hromadu kamenů. Odměnou jsou pro mě viditelné a krásné změny, které se v mém životě dějí. Někdy nad nimi jen žasnu, protože jsem nevěřila, že jsou vůbec možné.</p><p class='pb-2'>Díky této práci jsem si dokázala vyřešit jak zdravotní potíže, tak i témata, která mě trápila dlouhodobě. Ať už šlo o vztahy, emoce nebo aktuální životní situace, které mě velmi tížily. Můj život se začíná konečně skládat podle mých představ.</p><p class='pb-2'>Nikolo, děkuji Ti z celého srdce za péči, podporu a přítomnost, kterou v každém sezení přinášíš. Jsem vděčná, že jsi a že mohu být součástí této cesty. </p>",
     landing: false,
   },
   {
