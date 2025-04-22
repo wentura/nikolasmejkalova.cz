@@ -1,12 +1,22 @@
 export const recenze = [
   {
+    name: "Lucka",
+    text: "<p class='pb-2'>Sezení s Nikčou mi otevřelo nové cesty k pochopení sebe a mého života. <strong class='font-bold'>Terapie jemně, ale cíleně vede k vnitřnímu posunu, který se postupně promítá i do každodenního života.</strong></p><p class='pb-2'>Nikol má obrovský dar nacítit se na člověka, vnímat hluboké vrstvy tématu, které právě řeším, a s lehkostí a laskavostí mě provést procesem do velké hloubky.</p>",
+    landing: true,
+  },
+  {
+    name: "Běla",
+    text: "<p class='pb-2'>Díky práci s Psych-K a stínovými archetypy u Nikoly <strong class='font-bold'>se mi výrazně ulevilo od migrén, které mě trápily od dětství.</strong></p><p class='pb-2'>Zmizela i vyrážka na noze a celkově cítím víc klidu a pohody v životě. Neskutečně silná a léčivá zkušenost.</p>",
+    landing: true,
+  },
+  {
     name: "Monika",
-    text: "<p class='pb-2'><strong class='font-bold'>Děkuji paní Nikol, velice nám pomohla s dcerou která trpěla na atopický ekzém.</strong> Teď již je to minulostí.🙂 a pomohla i mě si upevnit sebevědomí a jít si za svým snem. Děkuji, Monika.</p>",
+    text: "<p class='pb-2'><strong class='font-bold'>Děkuji paní Nikol, velice nám pomohla s dcerou která trpěla na atopický ekzém.</strong></p><p class='pb-2'>Teď již je to minulostí.🙂 a pomohla i mě si upevnit sebevědomí a jít si za svým snem. Děkuji, Monika.</p>",
     landing: true,
   },
   {
     name: "Kája",
-    text: "<p class='pb-2'>Díky dlouhodobé spolupráci s Nikčou se mi podařilo <strong class='font-bold'>zpracovat důležitá témata mého života a zároveň některá nová rozkrýt, správně je pojmenovat a čelit jim v pravdě.</strong> Nikola je empatická, profesionální a opravdu ví, jak vést k výsledkům. Děkuji! </p>",
+    text: "<p class='pb-2'>Díky dlouhodobé spolupráci s Nikčou se mi podařilo <strong class='font-bold'>zpracovat důležitá témata mého života a zároveň některá nová rozkrýt, správně je pojmenovat a čelit jim v pravdě.</strong></p><p class='pb-2'>Nikola je empatická, profesionální a opravdu ví, jak vést k výsledkům. Děkuji! </p>",
     landing: true,
   },
   {
@@ -17,7 +27,7 @@ export const recenze = [
   {
     name: "Honza",
     text: "<p class='pb-2'><strong class='font-bold'>Setkání s Nikčou bylo pro mě velké neznámo. Od první chvíle jsem ale cítil, že tady jsem na správném místě.</strong><p>Konečně se mé pocity a vnitřní strachy mohly poprat mezi sebou a pak společně odejít. Její pochopení a důvěra ve vás je natolik příjemná, že nakonec nechcete vy sami odejít.</p><p>Na závěr píši, velké děkuji a bojuji!</p>",
-    landing: false,
+    landing: true,
   },
   {
     name: "Hanka",
