@@ -5,6 +5,7 @@ import Heading from "@/components/heading";
 import Hero from "@/components/hero";
 import How from "@/components/how";
 import Info from "@/components/informace";
+import Matomo from "@/components/matomo";
 import Menu from "@/components/menu";
 import Recenze from "@/components/recenze";
 import Sluzby from "@/components/sluzby";
@@ -41,6 +42,7 @@ export default function Home() {
       <Recenze lp="true" />
       <Contact />
       <Footer />
+      <Matomo />
     </main>
   );
 }

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import Matomo from "./matomo";
 
 export default function Footer() {
   return (
@@ -121,7 +120,6 @@ export default function Footer() {
           Zbyněk Svoboda
         </a>
       </div>
-      {/* <Matomo /> */}
     </div>
   );
 }
