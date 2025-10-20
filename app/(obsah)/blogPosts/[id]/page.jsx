@@ -4,8 +4,9 @@ import How from "@/components/how";
 import Sluzby from "@/components/sluzby";
 import { gql, useMutation, useQuery } from "@apollo/client";
 import React from "react";
+import { ApolloWrapper } from "../../../ApolloWrapper";
 
-export default function BlogPost({ params }) {
+function BlogPostContent({ params }) {
   const titId = params.id;
 
   const GET_BLOGPOST = gql`
@@ -54,5 +55,13 @@ export default function BlogPost({ params }) {
         )}
       </div>
     </div>
+  );
+}
+
+export default function BlogPost({ params }) {
+  return (
+    <ApolloWrapper>
+      <BlogPostContent params={params} />
+    </ApolloWrapper>
   );
 }

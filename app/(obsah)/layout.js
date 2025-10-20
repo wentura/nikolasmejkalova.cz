@@ -2,7 +2,6 @@ import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Menu from "@/components/menuObsah";
 import "@/public/style.css";
-import { ApolloWrapper } from "../ApolloWrapper";
 import "../globals.css";
 export const metadata = {
   title: "Nikola Smejkalová, metada psych-k",
@@ -18,7 +17,7 @@ export default function Layout({ children }) {
   return (
     <main>
       <Menu />
-      <ApolloWrapper className="main">{children}</ApolloWrapper>
+      <div className="main">{children}</div>
       <Contact />
       <Footer />
     </main>

@@ -1,38 +1,32 @@
 "use client";
-import { ApolloLink, HttpLink } from "@apollo/client";
 import {
-  ApolloNextAppProvider,
-  NextSSRApolloClient,
-  NextSSRInMemoryCache,
-  SSRMultipartLink,
-} from "@apollo/experimental-nextjs-app-support/ssr";
-function makeClient() {
-  const httpLink = new HttpLink({
-    uri: "https://nikolasmejkalova.zbyneksvoboda.cz/graphql",
-    fetchOptions: { cache: "no-store" },
-  });
-  return new NextSSRApolloClient({
-    // use the `NextSSRInMemoryCache`, not the normal `InMemoryCache`
-    cache: new NextSSRInMemoryCache(),
-    link:
-      typeof window === "undefined"
-        ? ApolloLink.from([
-            // in a SSR environment, if you use multipart features like
-            // @defer, you need to decide how to handle these.
-            // This strips all interfaces with a `@defer` directive from your queries.
-            new SSRMultipartLink({
-              stripDefer: true,
-            }),
-            httpLink,
-          ])
-        : httpLink,
-  });
-}
-// you need to create a component to wrap your app in
+  ApolloClient,
+  ApolloProvider,
+  HttpLink,
+  InMemoryCache,
+} from "@apollo/client";
+import { useEffect, useState } from "react";
+
+const httpLink = new HttpLink({
+  uri: "https://nikolasmejkalova.zbyneksvoboda.cz/graphql",
+  fetchOptions: { cache: "no-store" },
+});
+
+const client = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache(),
+});
+
 export function ApolloWrapper({ children }) {
-  return (
-    <ApolloNextAppProvider makeClient={makeClient}>
-      {children}
-    </ApolloNextAppProvider>
-  );
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return <div>Loading...</div>;
+  }
+
+  return <ApolloProvider client={client}>{children}</ApolloProvider>;
 }

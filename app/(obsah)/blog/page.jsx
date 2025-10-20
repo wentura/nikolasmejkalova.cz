@@ -5,6 +5,7 @@ import Sluzby from "@/components/sluzby";
 import defImg from "@/public/defImg.png";
 import { gql, useMutation, useQuery } from "@apollo/client";
 import React from "react";
+import { ApolloWrapper } from "../../ApolloWrapper";
 // const GET_NABIDKA = gql`
 //   query GetPosts {
 //     posts(where: { categoryName: "blog" }) {
@@ -53,7 +54,7 @@ const GET_NABIDKA = gql`
   }
 `;
 
-export default function Blog() {
+function BlogContent() {
   const { loading, error, data, refetch } = useQuery(GET_NABIDKA);
   const images = [];
   return (
@@ -107,5 +108,13 @@ export default function Blog() {
           ))}
       </div>
     </div>
+  );
+}
+
+export default function Blog() {
+  return (
+    <ApolloWrapper>
+      <BlogContent />
+    </ApolloWrapper>
   );
 }
