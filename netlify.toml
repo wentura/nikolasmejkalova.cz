@@ -5,6 +5,10 @@
 [build.environment]
   NODE_VERSION = "18"
 
+# Disable the Next.js plugin to prevent serverless function creation
+[plugins]
+  disabled = ["@netlify/plugin-nextjs"]
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
