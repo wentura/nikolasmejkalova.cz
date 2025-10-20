@@ -1,5 +1,8 @@
 module.exports = {
+  output: "export",
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     minimumCacheTTL: 3660,
     remotePatterns: [
       {

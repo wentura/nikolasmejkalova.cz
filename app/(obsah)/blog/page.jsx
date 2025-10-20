@@ -85,7 +85,7 @@ function BlogContent() {
                     <div className="md:col-span-2 md:pt-8">
                       <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
                         <a
-                          href={`/blogPosts/${post.id}`}
+                          href={`/blogPost?id=${post.id}`}
                           className="underline underline-offset-8 decoration-gray-300 decoration-1 hover:decoration-gray-700 hover:decoration-3 transition duration-300"
                         >
                           {post.title}
@@ -98,7 +98,7 @@ function BlogContent() {
                       ></p>
 
                       <div className="readMore text-right text-sm underline underline-offset-4 decoration-gray-300 decoration-1 hover:decoration-gray-700 hover:decoration-3 transition duration-300 pt-4 md:pt-12">
-                        <a href={`/blogPosts/${post.id}`}>číst příspěvek</a>
+                        <a href={`/blogPost?id=${post.id}`}>číst příspěvek</a>
                       </div>
                     </div>
                   </div>

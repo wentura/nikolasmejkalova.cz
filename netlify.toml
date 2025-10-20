@@ -1,19 +1,9 @@
 [build]
   command = "npm run build"
-  publish = ".next"
+  publish = "out"
 
 [build.environment]
   NODE_VERSION = "18"
-
-# Disable automatic plugin detection
-[build.processing]
-  skip_processing = false
-
-# Handle Next.js static assets
-[[headers]]
-  for = "/_next/static/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000, immutable"
 
 [[redirects]]
   from = "/*"

@@ -2,17 +2,17 @@
 import Heading from "@/components/heading";
 import How from "@/components/how";
 import Sluzby from "@/components/sluzby";
-import { gql, useMutation, useQuery } from "@apollo/client";
+import { gql, useQuery } from "@apollo/client";
 import React, { useEffect, useState } from "react";
-import { ApolloWrapper } from "../../../ApolloWrapper";
+import { ApolloWrapper } from "../../ApolloWrapper";
 
 function BlogPostContent() {
   const [postId, setPostId] = useState(null);
 
   useEffect(() => {
-    // Get the post ID from the URL path
-    const path = window.location.pathname;
-    const id = path.split("/").pop();
+    // Get the post ID from the URL query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get("id");
     setPostId(id);
   }, []);
 
