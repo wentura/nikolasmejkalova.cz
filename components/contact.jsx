@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Contact() {
@@ -7,13 +8,13 @@ export default function Contact() {
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
         {/* quote - start */}
         <div className="flex flex-col items-center gap-4 md:gap-6">
-          <a
+          <Link
             href="/"
             className="inline-flex items-center gap-2.5 text-3xl play md:text-5xl lg:text-6xl zvyraznenyText nadpis"
             aria-label="logo"
           >
             Nikola Smejkalová
-          </a>
+          </Link>
           <div className="max-w-md text-center text-gray-600 lg:text-lg">
             jsem vaše průvodkyně k osobnímu rozvoji
           </div>
@@ -34,8 +35,11 @@ export default function Contact() {
               href="tel:+420737081416"
               className="text-gray-900 text-xl py-4 px-8 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500 flex w-80 justify-between"
             >
-              <img
+              <Image
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707679724/nikolasmejkalova_cz/phone_zp1ffp.svg"
+                width={24}
+                height={24}
+                alt=""
                 className="w-6"
               />
               <span className="w-72 text-center">737081416</span>
@@ -46,8 +50,11 @@ export default function Contact() {
               href="mailto:nsnikola@email.cz"
               className="text-gray-900 text-xl py-4 px-8 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500 flex w-80 justify-between"
             >
-              <img
+              <Image
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707679724/nikolasmejkalova_cz/mail_rhkiyo.svg"
+                width={24}
+                height={24}
+                alt=""
                 className="w-6"
               />
               <span className="w-72 text-center">nsnikola@email.cz</span>

@@ -9,9 +9,14 @@ module.exports = {
         protocol: "https",
         hostname: "res.cloudinary.com",
       },
+      {
+        protocol: "https",
+        hostname: "nikolasmejkalova.zbyneksvoboda.cz",
+      },
+      {
+        protocol: "https",
+        hostname: "matomo.zbyneksvoboda.cz",
+      },
     ],
-  },
-  experimental: {
-    serverComponentsExternalPackages: ["@apollo/client"],
   },
 };

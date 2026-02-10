@@ -1,4 +1,5 @@
 import { sanitize } from "isomorphic-dompurify";
+import Link from "next/link";
 import React from "react";
 import { recenze } from "./recenze_data";
 
@@ -21,7 +22,7 @@ export default function Recenze({ lp }) {
                       <div
                         className="text-left "
                         dangerouslySetInnerHTML={{
-                          __html: DOMPurify.sanitize(rec.text),
+                          __html: sanitize(rec.text),
                         }}
                       ></div>
 
@@ -35,12 +36,12 @@ export default function Recenze({ lp }) {
             </div>
             <div className="mx-auto">
               <p className="text-center pt-12">
-                <a
+                <Link
                   href="/recenze"
                   className="text-gray-500 text-xl py-4 px-8 text-center underline-offset-2 underline decoration-gray-400"
                 >
                   ... a další říkají
-                </a>
+                </Link>
               </p>
             </div>
           </div>
@@ -52,7 +53,7 @@ export default function Recenze({ lp }) {
                   <div
                     className="text-left"
                     dangerouslySetInnerHTML={{
-                      __html: DOMPurify.sanitize(recen.text),
+                      __html: sanitize(recen.text),
                     }}
                   ></div>
                   <div className="text-6xl text-right text-gray-300 font-extralight pt-12">

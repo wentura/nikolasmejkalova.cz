@@ -4,7 +4,7 @@ import Menu from "@/components/menuObsah";
 import "@/public/style.css";
 import "../globals.css";
 export const metadata = {
-  title: "Nikola Smejkalová, metada psych-k",
+  title: "Nikola Smejkalová - facilitátorka metody Psych-K",
   description:
     "facilitatorka metody psych-k. Pomohu vám zbavit se neprospěšného myšlení a uzdravit i neduhy, se kterými si doktoři nevědí rady. Bez léků a neinvazivně.",
   keywords:

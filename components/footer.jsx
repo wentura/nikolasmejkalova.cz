@@ -14,7 +14,7 @@ export default function Footer() {
             Nikola Smejkalová
           </Link>
           <Link
-            href="recenze"
+            href="/recenze"
             className="text-gray-500 transition duration-100 hover:text-yellow-600"
           >
             recenze
@@ -115,7 +115,7 @@ export default function Footer() {
       </div>
 
       <div className="py-8 text-center text-sm text-gray-400">
-        Nikola Smejkalová © 2020 - 2025 vytvořil{" "}
+        Nikola Smejkalová © 2020 - {new Date().getFullYear()} - vytvořil{" "}
         <a href="https://www.zbyneksvoboda.cz" target="_blank" className="">
           Zbyněk Svoboda
         </a>

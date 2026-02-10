@@ -3,14 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { menuData } from "./menuData";
+
 export default function MenuMobilni() {
   const [isOpen, setIsOpen] = useState(false);
-  function toggleMenu() {
-    setIsOpen(!isOpen);
-  }
   return (
     <div className="mobilniMenu">
-      <button className="flex justify-end p-2 lg:hidden" onClick={toggleMenu}>
+      <button className="flex justify-end p-2 lg:hidden" onClick={() => setIsOpen(!isOpen)}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -23,15 +21,15 @@ export default function MenuMobilni() {
             strokeLinejoin="round"
             strokeWidth="2"
             d="M4 6h16M4 12h16M4 18h16"
-          ></path>
+          />
         </svg>
       </button>
       <nav
         className={`${
           isOpen ? "block" : "hidden"
-        }  top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-20 flex flex-col text-gray-900 shadow-md opacity-95 w-full h-screen fixed`}
+        } top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-20 flex flex-col text-gray-900 shadow-md opacity-95 w-full h-screen fixed`}
       >
-        <button className="flex justify-end p-4" onClick={toggleMenu}>
+        <button className="flex justify-end p-4" onClick={() => setIsOpen(false)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -43,13 +41,13 @@ export default function MenuMobilni() {
               strokeLinecap="round"
               strokeLinejoin="round"
               strokeWidth="2"
-              d="M 0 0 L 20 20 L 0 0 M 20 0 L 0 20 L 20 0"
-            ></path>
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
         <ul className="flex flex-col gap-y-2 w-full items-center text-xl my-2">
           <li className="flex px-8 py-4" key="home">
-            <Link href="/" onClick={toggleMenu}>
+            <Link href="/" onClick={() => setIsOpen(false)}>
               <Image
                 src="/podpis.png"
                 width={250}
@@ -59,19 +57,17 @@ export default function MenuMobilni() {
               />
             </Link>
           </li>
-          {menuData.map((menu) => {
-            return (
-              <li className="flex py-2" key={menu.link}>
-                <Link
-                  href={`/${menu.link}`}
-                  className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-600"
-                  onClick={toggleMenu}
-                >
-                  {menu.title}
-                </Link>
-              </li>
-            );
-          })}
+          {menuData.map((menu) => (
+            <li className="flex py-2" key={menu.link}>
+              <Link
+                href={`/${menu.link}`}
+                className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-yellow-600"
+                onClick={() => setIsOpen(false)}
+              >
+                {menu.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

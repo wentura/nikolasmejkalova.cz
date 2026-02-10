@@ -1,15 +1,17 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Content() {
   return (
     <section>
       <div className="py-6 sm:py-8 lg:py-12">
-        <div className="h-auto w-full max-w-lg md:max-w-7xl mx-auto overflow-hidden rounded-lg shadow-lg mb-12">
-          <img
+        <div className="h-auto w-full max-w-lg md:max-w-7xl mx-auto overflow-hidden rounded-lg shadow-lg mb-12 relative min-h-[200px]">
+          <Image
             src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4242copy_r4cwp0.webp"
-            loading="lazy"
             alt="Nikola Smejkalova, klidné a příjemné prostředí pro terapii Psych-K"
-            className="h-full w-full object-cover object-center"
+            fill
+            className="object-cover object-center"
+            sizes="(max-width: 768px) 100vw, 80vw"
           />
         </div>
         <div className="flex flex-col xl:flex-row px-8 w-full gap-8 justify-center items-center xl:items-baseline">

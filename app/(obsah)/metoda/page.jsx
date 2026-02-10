@@ -1,5 +1,6 @@
 import Content from "@/components/content";
 import Heading from "@/components/heading";
+import Image from "next/image";
 import React from "react";
 export default function Metoda() {
   return (
@@ -9,12 +10,13 @@ export default function Metoda() {
         <div className="bg-white py-6 sm:py-8 lg:py-12">
           <div className="mx-auto max-w-screen-xl px-4 md:px-8">
             <div className="flex gap-8 lg:gap-12  w-full flex-col md:flex-row-reverse">
-              <div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto w-full lg:w-1/2">
-                <img
+              <div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto w-full lg:w-1/2 relative">
+                <Image
                   src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4262copy_j6zeks.webp"
-                  loading="lazy"
                   alt="Nikola Smejkalová, mandala"
-                  className="h-full w-full object-cover object-center"
+                  fill
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
 
