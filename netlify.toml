@@ -4,3 +4,37 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Cross-Origin-Opener-Policy = "same-origin"
+    Content-Security-Policy = """
+      default-src 'self'; \
+      script-src 'self' 'unsafe-inline'; \
+      style-src 'self' 'unsafe-inline'; \
+      img-src 'self' data: https://res.cloudinary.com https://nikolasmejkalova.zbyneksvoboda.cz https://matomo.zbyneksvoboda.cz; \
+      font-src 'self'; \
+      connect-src 'self' https://matomo.zbyneksvoboda.cz; \
+      frame-src https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com; \
+      form-action 'self'; \
+      base-uri 'self'; \
+      object-src 'none'; \
+      frame-ancestors 'none'; \
+      upgrade-insecure-requests"""
+
+# Hashované buildy Next.js jsou immutable, obsah v /_next/static se nikdy nemění.
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.woff2"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
