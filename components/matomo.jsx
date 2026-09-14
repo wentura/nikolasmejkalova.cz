@@ -8,6 +8,8 @@ export default function Matomo() {
       width={1}
       height={1}
       alt=""
+      loading="lazy"
+      fetchPriority="low"
       className="border-0 absolute w-px h-px opacity-0"
       aria-hidden="true"
     />
