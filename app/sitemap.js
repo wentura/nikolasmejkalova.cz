@@ -1,8 +1,7 @@
+import { SITE_URL } from "@/lib/site";
 import { fetchGraphQL } from "@/lib/graphql";
 
 export const dynamic = "force-static";
-
-const SITE_URL = "https://www.nikolasmejkalova.cz";
 
 const GET_POST_IDS = `
   query GetPostIds {
@@ -23,25 +22,34 @@ const staticPages = [
   { url: "kontakt", priority: 0.8 },
   { url: "metoda", priority: 0.8 },
   { url: "terapie", priority: 0.8 },
-  { url: "akce", priority: 0.6 },
 ];
 
 export default async function sitemap() {
-  const blogData = await fetchGraphQL(GET_POST_IDS);
-  const posts = blogData?.posts?.nodes ?? [];
+  const now = new Date();
 
-  const blogUrls = posts.map((post) => ({
-    url: `${SITE_URL}/blogPost/${post.id}`,
-    lastModified: post.modified ? new Date(post.modified) : new Date(),
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
-
+  // Web běží s trailingSlash: true, sitemapa musí ukazovat na stejné URL jako
+  // canonical, jinak se každý záznam přesměrovává.
   const staticUrls = staticPages.map((page) => ({
-    url: `${SITE_URL}/${page.url}`,
-    lastModified: new Date(),
+    url: page.url ? `${SITE_URL}/${page.url}/` : `${SITE_URL}/`,
+    lastModified: now,
     changeFrequency: "weekly",
     priority: page.priority,
+  }));
+
+  let posts = [];
+  try {
+    const blogData = await fetchGraphQL(GET_POST_IDS);
+    posts = blogData?.posts?.nodes ?? [];
+  } catch (error) {
+    // Sitemapa bez článků je lepší než spadlý build celého webu.
+    console.warn("Sitemapa: články se nepodařilo načíst –", error.message);
+  }
+
+  const blogUrls = posts.map((post) => ({
+    url: `${SITE_URL}/blogPost/${post.id}/`,
+    lastModified: post.modified ? new Date(post.modified) : now,
+    changeFrequency: "monthly",
+    priority: 0.7,
   }));
 
   return [...staticUrls, ...blogUrls];
