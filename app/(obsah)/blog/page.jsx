@@ -1,7 +1,5 @@
-import Heading from "@/components/heading";
-import How from "@/components/how";
-import Sluzby from "@/components/sluzby";
 import { fetchGraphQL } from "@/lib/graphql";
+import { sanitizeHtml } from "@/lib/sanitize";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,21 +24,24 @@ const GET_NABIDKA = `
   }
 `;
 
-export async function generateMetadata() {
-  return {
-    title: "Blog | Nikola Smejkalová - Psych-K",
-    description:
-      "Články o metodě Psych-K, vnitřním klidu a osobním rozvoji. Facilitátorka Nikola Smejkalová.",
-  };
-}
+export const metadata = {
+  title: "Blog",
+  description:
+    "Články o metodě Psych-K, vnitřním klidu a osobním rozvoji. Facilitátorka Nikola Smejkalová.",
+};
 
 export default async function Blog() {
-  const data = await fetchGraphQL(GET_NABIDKA);
-  const posts = data?.posts?.nodes ?? [];
+  let posts = [];
+  try {
+    const data = await fetchGraphQL(GET_NABIDKA);
+    posts = data?.posts?.nodes ?? [];
+  } catch {
+    posts = [];
+  }
 
   return (
     <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12 blog">
-      <div className="">
+      <div>
         {posts.length === 0 && <p>Žádné články k zobrazení.</p>}
         {posts.map((post) => (
           <div
@@ -65,26 +66,26 @@ export default async function Blog() {
                   </div>
 
                   <div className="md:col-span-2 md:pt-8">
-                    <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
+                    <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6 md:text-left">
                       <Link
                         href={`/blogPost/${post.id}`}
                         className="underline underline-offset-8 decoration-gray-300 decoration-1 hover:decoration-gray-700 hover:decoration-3 transition duration-300"
                       >
                         {post.title}
                       </Link>
-                    </h1>
+                    </h2>
 
                     {post.perex?.perex && (
-                      <p
+                      <div
                         className="mb-6 text-gray-500 sm:text-lg md:mb-8"
-                        dangerouslySetInnerHTML={{ __html: post.perex.perex }}
+                        dangerouslySetInnerHTML={{
+                          __html: sanitizeHtml(post.perex.perex),
+                        }}
                       />
                     )}
 
                     <div className="readMore text-right text-sm underline underline-offset-4 decoration-gray-300 decoration-1 hover:decoration-gray-700 hover:decoration-3 transition duration-300 pt-4 md:pt-12">
-                      <Link href={`/blogPost/${post.id}`}>
-                        číst příspěvek
-                      </Link>
+                      <Link href={`/blogPost/${post.id}`}>číst příspěvek</Link>
                     </div>
                   </div>
                 </div>

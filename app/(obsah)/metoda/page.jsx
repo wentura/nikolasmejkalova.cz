@@ -1,18 +1,23 @@
 import Content from "@/components/content";
 import Heading from "@/components/heading";
 import Image from "next/image";
-import React from "react";
+
+export const metadata = {
+  title: "Metoda Psych-K",
+  description:
+    "Psych-K je metoda, která pomáhá zbavit se negativních přesvědčení a nahradit je pozitivními. Facilitátorka Nikola Smejkalová.",
+};
+
 export default function Metoda() {
   return (
     <div>
       <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12">
-        {/* text - start */}
         <div className="bg-white py-6 sm:py-8 lg:py-12">
           <div className="mx-auto max-w-screen-xl px-4 md:px-8">
             <div className="flex gap-8 lg:gap-12  w-full flex-col md:flex-row-reverse">
               <div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto w-full lg:w-1/2 relative">
                 <Image
-                  src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4262copy_j6zeks.webp"
+                  src="https://res.cloudinary.com/dam7wdzvx/image/upload/f_auto,q_auto,w_1000/v1708711872/nikolasmejkalova_cz/W45A4262copy_j6zeks.webp"
                   alt="Nikola Smejkalová, mandala"
                   fill
                   className="object-cover object-center"

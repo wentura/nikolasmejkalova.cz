@@ -1,9 +1,9 @@
 module.exports = {
   output: "export",
   trailingSlash: true,
+  poweredByHeader: false,
   images: {
     unoptimized: true,
-    minimumCacheTTL: 3660,
     remotePatterns: [
       {
         protocol: "https",
@@ -12,10 +12,6 @@ module.exports = {
       {
         protocol: "https",
         hostname: "nikolasmejkalova.zbyneksvoboda.cz",
-      },
-      {
-        protocol: "https",
-        hostname: "matomo.zbyneksvoboda.cz",
       },
     ],
   },

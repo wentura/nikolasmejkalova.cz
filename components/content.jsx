@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 
 export default function Content() {
   return (
@@ -7,7 +6,7 @@ export default function Content() {
       <div className="py-6 sm:py-8 lg:py-12">
         <div className="h-auto w-full max-w-lg md:max-w-7xl mx-auto overflow-hidden rounded-lg shadow-lg mb-12 relative min-h-[200px]">
           <Image
-            src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4242copy_r4cwp0.webp"
+            src="https://res.cloudinary.com/dam7wdzvx/image/upload/f_auto,q_auto,w_1400/v1708711872/nikolasmejkalova_cz/W45A4242copy_r4cwp0.webp"
             alt="Nikola Smejkalova, klidné a příjemné prostředí pro terapii Psych-K"
             fill
             className="object-cover object-center"

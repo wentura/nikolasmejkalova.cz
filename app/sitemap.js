@@ -1,8 +1,7 @@
 import { fetchGraphQL } from "@/lib/graphql";
+import { SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
-
-const SITE_URL = "https://www.nikolasmejkalova.cz";
 
 const GET_POST_IDS = `
   query GetPostIds {
@@ -17,21 +16,26 @@ const GET_POST_IDS = `
 
 const staticPages = [
   { url: "", priority: 1.0 },
-  { url: "recenze", priority: 0.8 },
-  { url: "blog", priority: 0.8 },
-  { url: "cenik", priority: 0.8 },
-  { url: "kontakt", priority: 0.8 },
-  { url: "metoda", priority: 0.8 },
-  { url: "terapie", priority: 0.8 },
-  { url: "akce", priority: 0.6 },
+  { url: "recenze/", priority: 0.8 },
+  { url: "blog/", priority: 0.8 },
+  { url: "cenik/", priority: 0.8 },
+  { url: "kontakt/", priority: 0.8 },
+  { url: "metoda/", priority: 0.8 },
+  { url: "terapie/", priority: 0.8 },
+  { url: "akce/", priority: 0.6 },
 ];
 
 export default async function sitemap() {
-  const blogData = await fetchGraphQL(GET_POST_IDS);
-  const posts = blogData?.posts?.nodes ?? [];
+  let posts = [];
+  try {
+    const blogData = await fetchGraphQL(GET_POST_IDS);
+    posts = blogData?.posts?.nodes ?? [];
+  } catch {
+    posts = [];
+  }
 
   const blogUrls = posts.map((post) => ({
-    url: `${SITE_URL}/blogPost/${post.id}`,
+    url: `${SITE_URL}/blogPost/${post.id}/`,
     lastModified: post.modified ? new Date(post.modified) : new Date(),
     changeFrequency: "monthly",
     priority: 0.7,

@@ -1,20 +1,46 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import { menuData } from "./menuData";
 
 export default function MenuMobilni() {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isOpen) return undefined;
+
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") setIsOpen(false);
+    };
+
+    document.addEventListener("keydown", onKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isOpen]);
+
   return (
     <div className="mobilniMenu">
-      <button className="flex justify-end p-2 lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+      <button
+        type="button"
+        className="flex justify-end p-2 lg:hidden"
+        onClick={() => setIsOpen((open) => !open)}
+        aria-expanded={isOpen}
+        aria-controls="mobile-menu"
+        aria-label={isOpen ? "Zavřít menu" : "Otevřít menu"}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
           className="w-6 h-6"
+          aria-hidden="true"
         >
           <path
             strokeLinecap="round"
@@ -25,17 +51,24 @@ export default function MenuMobilni() {
         </svg>
       </button>
       <nav
+        id="mobile-menu"
         className={`${
           isOpen ? "block" : "hidden"
         } top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-20 flex flex-col text-gray-900 shadow-md opacity-95 w-full h-screen fixed`}
       >
-        <button className="flex justify-end p-4" onClick={() => setIsOpen(false)}>
+        <button
+          type="button"
+          className="flex justify-end p-4"
+          onClick={() => setIsOpen(false)}
+          aria-label="Zavřít menu"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke="black"
             className="w-6 h-6"
+            aria-hidden="true"
           >
             <path
               strokeLinecap="round"
@@ -46,7 +79,7 @@ export default function MenuMobilni() {
           </svg>
         </button>
         <ul className="flex flex-col gap-y-2 w-full items-center text-xl my-2">
-          <li className="flex px-8 py-4" key="home">
+          <li className="flex px-8 py-4">
             <Link href="/" onClick={() => setIsOpen(false)}>
               <Image
                 src="/podpis.png"

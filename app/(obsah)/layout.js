@@ -1,16 +1,17 @@
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import Menu from "@/components/menuObsah";
-import "@/public/style.css";
-import "../globals.css";
+
 export const metadata = {
-  title: "Nikola Smejkalová - facilitátorka metody Psych-K",
   description:
-    "facilitatorka metody psych-k. Pomohu vám zbavit se neprospěšného myšlení a uzdravit i neduhy, se kterými si doktoři nevědí rady. Bez léků a neinvazivně.",
-  keywords:
-    "psych-k, psychk, metoda psych-k, facilitátorka psych-k, Nikola Smejkalová",
-  author: "Nikola Smejkalová",
-  url: "https://www.nikolasmejkalova.cz/",
+    "Facilitátorka metody Psych-K. Pomohu vám zbavit se neprospěšného myšlení a uzdravit i neduhy, se kterými si doktoři nevědí rady. Bez léků a neinvazivně.",
+  keywords: [
+    "psych-k",
+    "psychk",
+    "metoda psych-k",
+    "facilitátorka psych-k",
+    "Nikola Smejkalová",
+  ],
 };
 
 export default function Layout({ children }) {

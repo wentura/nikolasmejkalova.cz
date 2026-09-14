@@ -1,6 +1,11 @@
 import How from "@/components/how";
 import Info from "@/components/informace";
-import React from "react";
+
+export const metadata = {
+  title: "Ceník a o sezeních",
+  description:
+    "Terapeutické sezení metody Psych-K trvá 60–90 minut a stojí 2000 Kč. Možnost osobně i online.",
+};
 
 export default function Cenik() {
   return (

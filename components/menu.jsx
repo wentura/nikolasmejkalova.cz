@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { menuData } from "./menuData";
 import MenuMobilni from "./menuMobilni";
 export default function Menu() {

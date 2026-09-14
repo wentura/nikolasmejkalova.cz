@@ -1,4 +1,3 @@
-import React from "react";
 export default function Heading({ title, text, klass }) {
   return (
     <div className="mx-auto max-full px-4 md:px-8 bg-yellow-600 bg-opacity-10 my-12 py-8 lg:py-14 shadow-xl">

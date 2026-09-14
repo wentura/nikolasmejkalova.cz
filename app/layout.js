@@ -1,8 +1,7 @@
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
-import "@/public/style.css";
+import Matomo from "@/components/matomo";
+import { montserrat, playfair } from "./fonts";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
-const SITE_URL = "https://www.nikolasmejkalova.cz";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -12,9 +11,16 @@ export const metadata = {
   },
   description:
     "Cesta k vnitřnímu klidu a lepšímu životu. Jsem facilitátorka metody Psych-K. Pomohu vám zbavit se neprospěšného myšlení a uzdravit i neduhy, se kterými si doktoři nevědí rady. Bez léků a neinvazivně.",
-  keywords:
-    "psych-k, psychk, metoda psych-k, facilitátorka psych-k, Nikola Smejkalová, vnitřní klid, lepší život",
-  author: "Nikola Smejkalová",
+  keywords: [
+    "psych-k",
+    "psychk",
+    "metoda psych-k",
+    "facilitátorka psych-k",
+    "Nikola Smejkalová",
+    "vnitřní klid",
+    "lepší život",
+  ],
+  authors: [{ name: "Nikola Smejkalová" }],
   openGraph: {
     type: "website",
     locale: "cs_CZ",
@@ -39,13 +45,20 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="cs" suppressHydrationWarning={true}>
-      <body className="mont font-base">
+    <html
+      lang="cs"
+      className={`${montserrat.variable} ${playfair.variable}`}
+      suppressHydrationWarning
+    >
+      <body className={`${montserrat.className}`}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
         />
-        <main className="main">{children}</main>
+        {children}
+        <Matomo />
       </body>
     </html>
   );

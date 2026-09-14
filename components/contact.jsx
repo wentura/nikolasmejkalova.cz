@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 export default function Contact() {
   return (
@@ -23,7 +22,7 @@ export default function Contact() {
               <Image
                 width={300}
                 height={300}
-                src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
+                src="https://res.cloudinary.com/dam7wdzvx/image/upload/f_auto,q_auto,w_400/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
                 loading="lazy"
                 alt="Nikola Smejkalová, Vaše facilitátorka metody Psych-K"
                 className="h-full w-full object-cover object-center"

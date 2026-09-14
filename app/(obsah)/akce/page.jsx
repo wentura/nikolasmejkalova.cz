@@ -1,12 +1,16 @@
-import React from "react";
+export const metadata = {
+  title: "Akce",
+  description:
+    "Aktuální akce a setkání s Nikolu Smejkalovou, facilitátorkou metody Psych-K.",
+};
 
 export default function AkcePage() {
   return (
-    <div>
-      Snad tohle ctes....posli mi prvni akci tak jak chces aby vypadaly vsechny
-      nasledujici = fotku (asi jen pro ilustraci, kdyz ta akce je v
-      budoucnosti), nazev akce, cas a misto konani, cena vstupneho, kratky popis
-      akce, zpusob prihlasovani na akci atd atd. DIKY
+    <div className="mx-auto max-w-screen-md px-4 py-24 text-center">
+      <h1 className="mb-4 text-3xl font-bold text-gray-800">Připravujeme</h1>
+      <p className="text-gray-500">
+        Informace o aktuálních akcích zde brzy najdete.
+      </p>
     </div>
   );
 }
