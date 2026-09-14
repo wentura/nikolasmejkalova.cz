@@ -19,6 +19,11 @@
 .DS_Store
 *.pem
 
+# editor / deploy configs, které mohou obsahovat přihlašovací údaje
+.vscode/sftp.json
+.vscode/ftp-sync.json
+.ftpconfig
+
 # debug
 npm-debug.log*
 yarn-debug.log*
