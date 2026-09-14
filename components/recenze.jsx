@@ -1,6 +1,5 @@
-import { sanitize } from "isomorphic-dompurify";
+import { sanitizeHtml } from "@/lib/sanitize";
 import Link from "next/link";
-import React from "react";
 import { recenze } from "./recenze_data";
 
 export default function Recenze({ lp }) {
@@ -22,7 +21,7 @@ export default function Recenze({ lp }) {
                       <div
                         className="text-left "
                         dangerouslySetInnerHTML={{
-                          __html: sanitize(rec.text),
+                          __html: sanitizeHtml(rec.text),
                         }}
                       ></div>
 
@@ -53,7 +52,7 @@ export default function Recenze({ lp }) {
                   <div
                     className="text-left"
                     dangerouslySetInnerHTML={{
-                      __html: sanitize(recen.text),
+                      __html: sanitizeHtml(recen.text),
                     }}
                   ></div>
                   <div className="text-6xl text-right text-gray-300 font-extralight pt-12">

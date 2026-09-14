@@ -1,4 +1,5 @@
 import { fetchGraphQL } from "@/lib/graphql";
+import { htmlToPlainText, sanitizeEmbed, sanitizeHtml } from "@/lib/sanitize";
 import { notFound } from "next/navigation";
 
 const GET_BLOGPOST = `
@@ -35,13 +36,20 @@ export async function generateMetadata({ params }) {
   const data = await fetchGraphQL(GET_BLOGPOST, { id });
   const post = data?.post;
 
-  if (!post) return { title: "Článek | Nikola Smejkalová" };
+  if (!post) return { title: "Článek" };
+
+  const plainText = htmlToPlainText(post.content);
 
   return {
-    title: `${post.title} | Nikola Smejkalová - Psych-K`,
-    description: post.content?.replace(/<[^>]*>/g, "").slice(0, 160) + "...",
+    title: post.title,
+    description: plainText.slice(0, 157) + (plainText.length > 157 ? "..." : ""),
+    alternates: {
+      canonical: `/blogPost/${id}`,
+    },
     openGraph: {
+      type: "article",
       title: post.title,
+      url: `/blogPost/${id}`,
     },
   };
 }
@@ -53,25 +61,23 @@ export default async function BlogPostPage({ params }) {
 
   if (!post) notFound();
 
-  const embed = post.ytEmbed;
+  const embed = post.ytEmbed?.ytEmbed;
 
   return (
-    <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12 blogPost">
-      <div className="bg-white py-6 sm:py-8 lg:py-12">
-        <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">
-          {post.title}
-        </h1>
+    <article className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12 blogPost">
+      <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">
+        {post.title}
+      </h1>
+      <div
+        className="mb-6 text-gray-500 sm:text-lg md:mb-8 blogPost"
+        dangerouslySetInnerHTML={{ __html: sanitizeHtml(post.content) }}
+      />
+      {embed && (
         <div
-          className="mb-6 text-gray-500 sm:text-lg md:mb-8 blogPost"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          className="my-12 text-gray-500 sm:text-lg md:mb-8 blogPost youtube-video-container"
+          dangerouslySetInnerHTML={{ __html: sanitizeEmbed(embed) }}
         />
-        {embed?.ytEmbed && (
-          <div
-            className="my-12 text-gray-500 sm:text-lg md:mb-8 blogPost youtube-video-container"
-            dangerouslySetInnerHTML={{ __html: embed.ytEmbed }}
-          />
-        )}
-      </div>
-    </div>
+      )}
+    </article>
   );
 }
