@@ -1,9 +1,15 @@
 import Heading from "@/components/heading";
 import How from "@/components/how";
-import Recenze from "@/components/recenze";
 import Sluzby from "@/components/sluzby";
-import React from "react";
-import Kontakt from "../kontakt/page";
+
+export const metadata = {
+  title: "Terapie",
+  description:
+    "Transformační terapie s Nikolou Smejkalovou – společně odhalíme a změníme omezující vzorce myšlení a chování.",
+  alternates: {
+    canonical: "/terapie",
+  },
+};
 
 export default function Terapie() {
   return (

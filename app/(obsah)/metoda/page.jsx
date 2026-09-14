@@ -1,7 +1,16 @@
 import Content from "@/components/content";
 import Heading from "@/components/heading";
 import Image from "next/image";
-import React from "react";
+
+export const metadata = {
+  title: "Metoda Psych-K",
+  description:
+    "Psych-K pomáhá zbavit se negativních přesvědčení a nahradit je pozitivními. Metodu vyvinul Rob Williams ve spolupráci s Brucem H. Liptonem.",
+  alternates: {
+    canonical: "/metoda",
+  },
+};
+
 export default function Metoda() {
   return (
     <div>
@@ -21,9 +30,9 @@ export default function Metoda() {
               </div>
 
               <div className="md:pt-8  w-full lg:w-1/2">
-                <h2 className="mt-8 md:mt-0 text-center text-3xl md:text-4xl mb-2 text-gray-600">
+                <h1 className="mt-8 md:mt-0 text-center text-3xl md:text-4xl mb-2 text-gray-600">
                   Psych-K&reg;
-                </h2>
+                </h1>
 
                 <p className="mb-6 text-gray-500 sm:text-xl md:mb-8">
                   Pomocí této metody se{" "}
