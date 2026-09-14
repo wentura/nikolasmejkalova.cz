@@ -1,5 +1,3 @@
-import Link from "next/link";
-import React from "react";
 import SjednatSchuzku from "./sjednatSchuzku";
 import { spatneData, spravneData } from "./spravne_data";
 export default function Spravne() {

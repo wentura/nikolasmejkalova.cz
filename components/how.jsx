@@ -1,5 +1,3 @@
-import Link from "next/link";
-import React from "react";
 import { howData } from "./how_data";
 import SjednatSchuzku from "./sjednatSchuzku";
 export default function How() {
