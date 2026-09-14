@@ -2,6 +2,7 @@ import Heading from "@/components/heading";
 import How from "@/components/how";
 import Sluzby from "@/components/sluzby";
 import { fetchGraphQL } from "@/lib/graphql";
+import { sanitize } from "isomorphic-dompurify";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -35,8 +36,13 @@ export async function generateMetadata() {
 }
 
 export default async function Blog() {
-  const data = await fetchGraphQL(GET_NABIDKA);
-  const posts = data?.posts?.nodes ?? [];
+  let posts = [];
+  try {
+    const data = await fetchGraphQL(GET_NABIDKA);
+    posts = data?.posts?.nodes ?? [];
+  } catch {
+    posts = [];
+  }
 
   return (
     <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12 blog">
@@ -77,7 +83,7 @@ export default async function Blog() {
                     {post.perex?.perex && (
                       <p
                         className="mb-6 text-gray-500 sm:text-lg md:mb-8"
-                        dangerouslySetInnerHTML={{ __html: post.perex.perex }}
+                        dangerouslySetInnerHTML={{ __html: sanitize(post.perex.perex) }}
                       />
                     )}
 

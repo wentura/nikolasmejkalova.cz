@@ -52,8 +52,10 @@ export default function Hero() {
               width={1000}
               height={700}
               //   src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
-              src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1742743890/nikolasmejkalova_cz/ja.webp"
-              loading="lazy"
+              src="https://res.cloudinary.com/dam7wdzvx/image/upload/f_auto,q_auto,w_1000/v1742743890/nikolasmejkalova_cz/ja.webp"
+              priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 288px, (max-width: 1280px) 512px, 600px"
               alt="Nikola Smejkalova, Vaše facilitátorka metody Psych-K"
               className="h-full w-full object-cover object-center"
             />

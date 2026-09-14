@@ -4,6 +4,12 @@ import "@/public/style.css";
 import "./globals.css";
 const SITE_URL = "https://www.nikolasmejkalova.cz";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#d97706",
+};
+
 export const metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -40,6 +46,19 @@ const jsonLd = {
 export default function RootLayout({ children }) {
   return (
     <html lang="cs" suppressHydrationWarning={true}>
+      <head>
+        <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap"
+        />
+      </head>
       <body className="mont font-base">
         <script
           type="application/ld+json"

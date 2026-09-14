@@ -27,8 +27,13 @@ const staticPages = [
 ];
 
 export default async function sitemap() {
-  const blogData = await fetchGraphQL(GET_POST_IDS);
-  const posts = blogData?.posts?.nodes ?? [];
+  let posts = [];
+  try {
+    const blogData = await fetchGraphQL(GET_POST_IDS);
+    posts = blogData?.posts?.nodes ?? [];
+  } catch {
+    posts = [];
+  }
 
   const blogUrls = posts.map((post) => ({
     url: `${SITE_URL}/blogPost/${post.id}`,
