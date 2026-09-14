@@ -27,18 +27,23 @@ const staticPages = [
 ];
 
 export default async function sitemap() {
-  const blogData = await fetchGraphQL(GET_POST_IDS);
-  const posts = blogData?.posts?.nodes ?? [];
+  let blogUrls = [];
+  try {
+    const blogData = await fetchGraphQL(GET_POST_IDS);
+    const posts = blogData?.posts?.nodes ?? [];
 
-  const blogUrls = posts.map((post) => ({
-    url: `${SITE_URL}/blogPost/${post.id}`,
-    lastModified: post.modified ? new Date(post.modified) : new Date(),
-    changeFrequency: "monthly",
-    priority: 0.7,
-  }));
+    blogUrls = posts.map((post) => ({
+      url: `${SITE_URL}/blogPost/${post.id}`,
+      lastModified: post.modified ? new Date(post.modified) : new Date(),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    }));
+  } catch (error) {
+    console.error("Failed to fetch posts for sitemap:", error);
+  }
 
   const staticUrls = staticPages.map((page) => ({
-    url: `${SITE_URL}/${page.url}`,
+    url: page.url ? `${SITE_URL}/${page.url}` : `${SITE_URL}/`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: page.priority,

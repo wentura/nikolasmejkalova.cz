@@ -116,7 +116,12 @@ export default function Footer() {
 
       <div className="py-8 text-center text-sm text-gray-400">
         Nikola Smejkalová © 2020 - {new Date().getFullYear()} - vytvořil{" "}
-        <a href="https://www.zbyneksvoboda.cz" target="_blank" className="">
+        <a
+          href="https://www.zbyneksvoboda.cz"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline"
+        >
           Zbyněk Svoboda
         </a>
       </div>

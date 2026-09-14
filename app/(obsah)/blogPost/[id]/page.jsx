@@ -1,5 +1,7 @@
-import { fetchGraphQL } from "@/lib/graphql";
+import { cache } from "react";
 import { notFound } from "next/navigation";
+import { sanitize } from "isomorphic-dompurify";
+import { fetchGraphQL } from "@/lib/graphql";
 
 const GET_BLOGPOST = `
   query GetPost($id: ID!) {
@@ -24,6 +26,11 @@ const GET_POST_IDS = `
   }
 `;
 
+const getPost = cache(async (id) => {
+  const data = await fetchGraphQL(GET_BLOGPOST, { id });
+  return data?.post ?? null;
+});
+
 export async function generateStaticParams() {
   const data = await fetchGraphQL(GET_POST_IDS);
   const posts = data?.posts?.nodes ?? [];
@@ -32,8 +39,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
-  const data = await fetchGraphQL(GET_BLOGPOST, { id });
-  const post = data?.post;
+  const post = await getPost(id);
 
   if (!post) return { title: "Článek | Nikola Smejkalová" };
 
@@ -48,30 +54,39 @@ export async function generateMetadata({ params }) {
 
 export default async function BlogPostPage({ params }) {
   const { id } = await params;
-  const data = await fetchGraphQL(GET_BLOGPOST, { id });
-  const post = data?.post;
+  const post = await getPost(id);
 
   if (!post) notFound();
 
   const embed = post.ytEmbed;
 
   return (
-    <div className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12 blogPost">
+    <article className="mx-auto max-w-screen-xl px-4 md:px-8 bg-white py-6 sm:py-8 lg:py-12 blogPost">
       <div className="bg-white py-6 sm:py-8 lg:py-12">
         <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">
           {post.title}
         </h1>
         <div
           className="mb-6 text-gray-500 sm:text-lg md:mb-8 blogPost"
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: sanitize(post.content) }}
         />
         {embed?.ytEmbed && (
           <div
             className="my-12 text-gray-500 sm:text-lg md:mb-8 blogPost youtube-video-container"
-            dangerouslySetInnerHTML={{ __html: embed.ytEmbed }}
+            dangerouslySetInnerHTML={{
+              __html: sanitize(embed.ytEmbed, {
+                ADD_TAGS: ["iframe"],
+                ADD_ATTR: [
+                  "allow",
+                  "allowfullscreen",
+                  "frameborder",
+                  "scrolling",
+                ],
+              }),
+            }}
           />
         )}
       </div>
-    </div>
+    </article>
   );
 }

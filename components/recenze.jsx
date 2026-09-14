@@ -15,10 +15,10 @@ export default function Recenze({ lp }) {
           <div>
             {/* <div className="flex flex-wrap"> */}
             <div className="grid gap-4 sm:grid-cols-1 md:gap-12 xl:grid-cols-3 xl:gap-24">
-              {recenze.map((rec, index) => {
+              {recenze.map((rec) => {
                 return (
                   rec.landing && (
-                    <div key={index} className="flex flex-col my-4">
+                    <div key={rec.name} className="flex flex-col my-4">
                       <div
                         className="text-left "
                         dangerouslySetInnerHTML={{

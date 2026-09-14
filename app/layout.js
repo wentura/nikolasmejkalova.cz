@@ -1,7 +1,13 @@
-import Contact from "@/components/contact";
-import Footer from "@/components/footer";
-import "@/public/style.css";
+import { Alex_Brush } from "next/font/google";
 import "./globals.css";
+
+const alexBrush = Alex_Brush({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-alex-brush",
+});
+
 const SITE_URL = "https://www.nikolasmejkalova.cz";
 
 export const metadata = {
@@ -14,7 +20,7 @@ export const metadata = {
     "Cesta k vnitřnímu klidu a lepšímu životu. Jsem facilitátorka metody Psych-K. Pomohu vám zbavit se neprospěšného myšlení a uzdravit i neduhy, se kterými si doktoři nevědí rady. Bez léků a neinvazivně.",
   keywords:
     "psych-k, psychk, metoda psych-k, facilitátorka psych-k, Nikola Smejkalová, vnitřní klid, lepší život",
-  author: "Nikola Smejkalová",
+  authors: [{ name: "Nikola Smejkalová" }],
   openGraph: {
     type: "website",
     locale: "cs_CZ",
@@ -39,13 +45,13 @@ const jsonLd = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="cs" suppressHydrationWarning={true}>
+    <html lang="cs" suppressHydrationWarning={true} className={alexBrush.variable}>
       <body className="mont font-base">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <main className="main">{children}</main>
+        {children}
       </body>
     </html>
   );

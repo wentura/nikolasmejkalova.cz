@@ -16,7 +16,7 @@ export default function Sluzby() {
                 height={1000}
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4259copy_a2kqzf.webp"
                 loading="lazy"
-                alt="Nikola Smejkalová a její terapeitucké křesílko"
+                alt="Nikola Smejkalová a její terapeutické křesílko"
                 className="h-full w-full object-cover object-center"
               />
             </div>
@@ -26,8 +26,7 @@ export default function Sluzby() {
                 Jsem Nikola Smejkalová
               </h2>
               <p className="mb-4 md:mb-8">
-                {/* <h2 className="mt-8 md:mt-0 mb-4 text-2xl text-gray-800 md:mb-6 lg:text-4xl play"> */}
-                vaše průvodkyně osobním rozvojem a nevědomím. .
+                vaše průvodkyně osobním rozvojem a nevědomím.
               </p>
               <p className="mb-2 md:mb-4">
                 Společně odhalíme a transformujeme omezující vzorce myšlení a

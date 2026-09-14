@@ -8,7 +8,13 @@ export default function MenuMobilni() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="mobilniMenu">
-      <button className="flex justify-end p-2 lg:hidden" onClick={() => setIsOpen(!isOpen)}>
+      <button
+        type="button"
+        className="flex justify-end p-2 lg:hidden"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Otevřít mobilní menu"
+        aria-expanded={isOpen}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -29,7 +35,12 @@ export default function MenuMobilni() {
           isOpen ? "block" : "hidden"
         } top-0 left-0 right-0 bg-white px-2 pt-2 pb-4 z-20 flex flex-col text-gray-900 shadow-md opacity-95 w-full h-screen fixed`}
       >
-        <button className="flex justify-end p-4" onClick={() => setIsOpen(false)}>
+        <button
+          type="button"
+          className="flex justify-end p-4"
+          onClick={() => setIsOpen(false)}
+          aria-label="Zavřít mobilní menu"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

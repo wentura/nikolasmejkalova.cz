@@ -11,7 +11,7 @@ export default function Contact() {
           <Link
             href="/"
             className="inline-flex items-center gap-2.5 text-3xl play md:text-5xl lg:text-6xl zvyraznenyText nadpis"
-            aria-label="logo"
+            aria-label="Nikola Smejkalová - úvodní stránka"
           >
             Nikola Smejkalová
           </Link>

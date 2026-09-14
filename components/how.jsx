@@ -13,9 +13,9 @@ export default function How() {
           Jaké změny můžete očekávat při naší spolupráci:
         </h2>
         <div className="grid gap-4 sm:grid-cols-1 md:gap-12 xl:grid-cols-3 xl:gap-16">
-          {howData.map((how, index) => {
+          {howData.map((how) => {
             return (
-              <div key={index}>
+              <div key={how.title}>
                 <h3 className="xl:mb-4 text-lg font-semibold text-gray-700">
                   {how.title}
                 </h3>

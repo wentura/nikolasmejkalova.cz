@@ -13,9 +13,9 @@ export default function Spravne() {
           Jsi tu správně, pokud:
         </h2>
         <div className="grid gap-4 sm:grid-cols-1 md:gap-8 xl:grid-cols-3 xl:gap-8">
-          {spravneData.map((spravne, index) => {
+          {spravneData.map((spravne) => {
             return (
-              <div key={index}>
+              <div key={spravne.text}>
                 <p className="text-gray-500">{spravne.text}</p>
               </div>
             );
@@ -25,9 +25,9 @@ export default function Spravne() {
           Možná to není pro tebe, pokud:
         </h2>
         <div className="grid gap-4 sm:grid-cols-1 md:gap-8 xl:grid-cols-3 xl:gap-8">
-          {spatneData.map((spatne, index) => {
+          {spatneData.map((spatne) => {
             return (
-              <div key={index}>
+              <div key={spatne.text}>
                 <p className="text-gray-500">{spatne.text}</p>
               </div>
             );

@@ -1,19 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer components {
   @font-face {
     font-family: "playfair";
     src: url("/playfair.woff2") format("woff2");
-    /* src: url("/noto.woff") format("woff"); */
-    /* src: url("/noto.ttf") format("truetype"); */
     font-display: swap !important;
   }
   @font-face {
     font-family: "montserrat";
     src: url("/montserrat.woff2") format("woff2");
-    /* src: url("/montserrat.woff") format("woff"); */
-    /* src: url("/montserrat.ttf") format("truetype"); */
     font-display: swap !important;
   }
   .play {
@@ -29,7 +26,32 @@
   .nadpis {
     font-weight: 700 !important;
   }
+  .font-heading,
+  blockquote {
+    font-family: var(--font-alex-brush), "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .btn-primary {
+    @apply text-gray-900 text-xl px-6 py-4 text-center bg-amber-400 rounded-xl shadow-2xl hover:shadow-md transition duration-500 hover:scale-95 hover:bg-amber-500;
+  }
 }
+
+.blogList {
+  flex-direction: row-reverse;
+}
+
+.blogPost div {
+  padding-bottom: 20px;
+}
+
+.blogPost blockquote {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
 .youtube-video-container {
   position: relative;
   overflow: hidden;
