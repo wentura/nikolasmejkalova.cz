@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import SjednatSchuzku from "./sjednatSchuzku";
 export default function Hero() {
   return (
@@ -30,7 +29,8 @@ export default function Hero() {
             <Image
               src="/podpis.png"
               width={600}
-              height={200}
+              height={165}
+              sizes="(max-width: 768px) 300px, 600px"
               alt="Nikola Smejkalová"
               className="self-center lg:self-end lg:mb-4 -rotate-12 lg:-top-16 xl:-top-12 lg:relative "
             />
@@ -51,9 +51,10 @@ export default function Hero() {
             <Image
               width={1000}
               height={700}
-              //   src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1707674374/nikolasmejkalova_cz/nikola_byuj6t.webp"
               src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1742743890/nikolasmejkalova_cz/ja.webp"
-              loading="lazy"
+              priority
+              fetchPriority="high"
+              sizes="(max-width: 768px) 288px, (max-width: 1280px) 512px, 640px"
               alt="Nikola Smejkalova, Vaše facilitátorka metody Psych-K"
               className="h-full w-full object-cover object-center"
             />

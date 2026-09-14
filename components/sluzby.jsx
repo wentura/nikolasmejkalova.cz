@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
 import SjednatSchuzku from "./sjednatSchuzku";
 
 export default function Sluzby() {
@@ -16,7 +14,8 @@ export default function Sluzby() {
                 height={1000}
                 src="https://res.cloudinary.com/dam7wdzvx/image/upload/v1708711872/nikolasmejkalova_cz/W45A4259copy_a2kqzf.webp"
                 loading="lazy"
-                alt="Nikola Smejkalová a její terapeitucké křesílko"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                alt="Nikola Smejkalová a její terapeutické křesílko"
                 className="h-full w-full object-cover object-center"
               />
             </div>
