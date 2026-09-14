@@ -4,10 +4,10 @@
 
 @layer components {
   .play {
-    font-family: "playfair", serif;
+    font-family: var(--font-playfair), serif;
   }
   .mont {
-    font-family: "montserrat", sans-serif;
+    font-family: var(--font-montserrat), sans-serif;
     font-weight: 300;
   }
   .font-heading,

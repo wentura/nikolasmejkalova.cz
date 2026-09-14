@@ -1,14 +1,6 @@
 import { CONTACT, SITE_URL } from "@/lib/site";
-import { Alex_Brush } from "next/font/google";
-import "./fonts.css";
+import { alexBrush, montserrat, playfair } from "./fonts";
 import "./globals.css";
-
-const alexBrush = Alex_Brush({
-  weight: "400",
-  subsets: ["latin-ext"],
-  display: "swap",
-  variable: "--font-alex-brush",
-});
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),
@@ -58,18 +50,9 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="cs"
-      className={alexBrush.variable}
+      className={`${montserrat.variable} ${playfair.variable} ${alexBrush.variable}`}
       suppressHydrationWarning={true}
     >
-      <head>
-        <link
-          rel="preload"
-          href="/montserrat.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-      </head>
       <body className="mont font-base">
         <script
           type="application/ld+json"
